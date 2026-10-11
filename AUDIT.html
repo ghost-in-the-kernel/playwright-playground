@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Site audit: playwright-playground.com</title>
+<style>
+:root{--bg:#fbfaf7;--fg:#1d1d1b;--dim:#6b6a65;--line:#e4e1d8;--major:#b3261e;--minor:#9a6700;--ok:#1a7f37;--card:#fff}
+@media (prefers-color-scheme:dark){:root{--bg:#161614;--fg:#ecebe6;--dim:#a19f97;--line:#33322e;--major:#ff8a80;--minor:#e3b341;--ok:#56d364;--card:#1e1e1b}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.55 system-ui,-apple-system,"Segoe UI",sans-serif}
+main{max-width:860px;margin:0 auto;padding:32px 16px 64px}h1{font-size:1.7rem;margin:0 0 4px}.sub{color:var(--dim);margin:0 0 24px}
+.counts{display:flex;gap:12px;flex-wrap:wrap;margin:0 0 28px}.count{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:12px 16px;min-width:120px}
+.count b{display:block;font-size:1.6rem}.count.major b{color:var(--major)}.count.minor b{color:var(--minor)}
+.finding{background:var(--card);border:1px solid var(--line);border-left:5px solid var(--line);border-radius:10px;padding:16px 20px;margin:0 0 16px}
+.finding.short{border-left-color:var(--dim)}.finding.major{border-left-color:var(--major)}.finding.minor{border-left-color:var(--minor)}.finding.none{border-left-color:var(--ok)}
+.finding h2{font-size:1.1rem;margin:0 0 10px}.badge{font-size:.72rem;text-transform:uppercase;letter-spacing:.05em;padding:2px 7px;border-radius:5px;color:var(--card);vertical-align:2px}
+.major .badge{background:var(--major)}.minor .badge{background:var(--minor)}.code{color:var(--dim);font-weight:500}
+ul{padding-left:20px;margin:8px 0 0}li{margin:2px 0;overflow-wrap:anywhere}.says{color:var(--dim)}a{color:inherit}
+summary{cursor:pointer;color:var(--dim)}footer{color:var(--dim);font-size:.85rem;margin-top:32px;border-top:1px solid var(--line);padding-top:12px}
+</style></head><body><main>
+<h1>What is wrong with playwright-playground.com</h1>
+<p class="sub">Read on 2026-10-11: 41 pages of https://playwright-playground.com, in a real browser, logged out, one page at a time. Nothing was sent, bought or signed in to.</p>
+<div class="counts"><div class="count major"><b>4</b>major</div><div class="count minor"><b>4</b>minor</div></div>
+
+<section class="finding major"><h2><span class="badge">major</span> <span class="code">SITE-08</span> 1 form field on 1 page has no label</h2>
+<p><strong>Why it matters.</strong> A screen reader announces a field with no label as &quot;edit text&quot;, so a blind visitor cannot tell what to type; a placeholder alone vanishes once typing starts. Accessibility audits fail it.</p>
+<p><strong>Likely fix.</strong> Give each field a &lt;label for=&quot;its id&quot;&gt; (each id used once on the page), or an aria-label.</p>
+<details open><summary>1 page</summary><ul><li><a href="https://playwright-playground.com/locators/challenges">/locators/challenges</a> <span class="says">1 field: &lt;input type=&quot;search&quot;&gt;</span></li></ul></details></section>
+<section class="finding major"><h2><span class="badge">major</span> <span class="code">SITE-20</span> 1 script, style sheet or data request on 1 page failed to load</h2>
+<p><strong>Why it matters.</strong> A script or style sheet that does not load leaves part of the page unstyled or not working: a menu that does not open, a button that does nothing, a list that never fills. Visitors see it; nothing tells the site's owner.</p>
+<p><strong>Likely fix.</strong> Point each at a file that exists (a path changed in a release is the usual cause), or remove the reference.</p>
+<details open><summary>1 page</summary><ul><li><a href="https://playwright-playground.com/frames/embeds">/frames/embeds</a> <span class="says">1 request: /cdn-cgi/rum (ERR_FAILED)</span></li></ul></details></section>
+<section class="finding major"><h2><span class="badge">major</span> <span class="code">SITE-21</span> The site's own scripts throw 1 error on 1 page</h2>
+<p><strong>Why it matters.</strong> An error nothing catches stops the script that threw it: whatever it was doing (a form's checks, a cart, tracking) is left undone. Visitors never report it; it is seen only in the browser's console.</p>
+<p><strong>Likely fix.</strong> Open the page with the browser's developer tools, read the console, and fix each error at the line it names.</p>
+<details open><summary>1 page</summary><ul><li><a href="https://playwright-playground.com/frames/embeds">/frames/embeds</a> <span class="says">1 error: Failed to read the 'serviceWorker' property from 'Navigator': Service worker is disabled because the context is sandboxe</span></li></ul></details></section>
+<section class="finding major"><h2><span class="badge">major</span> <span class="code">SITE-30</span> 1 of the 3 images asked for is broken: visitors see an empty box</h2>
+<p><strong>Why it matters.</strong> A broken image is the first thing a visitor notices: a product with no photo, a logo missing, a gap in the page; it reads as a site nobody looks after.</p>
+<p><strong>Likely fix.</strong> Put each image back at its address, or point the page at where it is now (a file renamed or a folder moved in a release is the usual cause).</p>
+<details open><summary>1 page</summary><ul><li><a href="https://playwright-playground.com/content/page-audit">/content/page-audit</a> <span class="says">https://playwright-playground.com/images/team-photo.png answered 404</span></li></ul></details></section>
+<section class="finding minor"><h2><span class="badge">minor</span> <span class="code">SITE-24</span> 4 security headers no page sends</h2>
+<p><strong>Why it matters.</strong> Each header closes a door attackers use (a downgrade to http, a script slipped in, the site framed in another to trick a click). Security reviews and compliance checklists ask for them, and they cost a line of server configuration.</p>
+<p><strong>Likely fix.</strong> Add the missing headers in the web server or the CDN (one setting each), starting with Strict-Transport-Security.</p>
+<details open><summary>4 pages</summary><ul><li><a href="https://playwright-playground.com/">/</a> <span class="says">none of the 41 pages read sends Strict-Transport-Security (browsers keep to https)</span></li><li><a href="https://playwright-playground.com/">/</a> <span class="says">none of the 41 pages read sends Content-Security-Policy (which scripts may run)</span></li><li><a href="https://playwright-playground.com/">/</a> <span class="says">none of the 41 pages read sends X-Frame-Options or frame-ancestors (another site cannot frame it to trick a click)</span></li><li><a href="https://playwright-playground.com/">/</a> <span class="says">none of the 41 pages read sends X-Content-Type-Options: nosniff</span></li></ul></details></section>
+<section class="finding minor"><h2><span class="badge">minor</span> <span class="code">SITE-17</span> 2 pages share one</h2>
+<p><strong>Why it matters.</strong> Search results show the description under the title; without one, the search engine picks a line of the page, often the menu or a cookie notice.</p>
+<p><strong>Likely fix.</strong> Give each page a &lt;meta name=&quot;description&quot;&gt; of a sentence or two saying what it offers.</p>
+<details open><summary>2 pages</summary><ul><li><a href="https://playwright-playground.com/">/</a> <span class="says">shares &quot;Free hands-on Playwright exercises with TypeScript: locator…&quot;</span></li><li><a href="https://playwright-playground.com/dialogs/new-tab-content">/dialogs/new-tab-content</a> <span class="says">shares &quot;Free hands-on Playwright exercises with TypeScript: locator…&quot;</span></li></ul></details></section>
+<section class="finding minor"><h2><span class="badge">minor</span> <span class="code">SITE-13</span> 1 image on 1 page has no alt text</h2>
+<p><strong>Why it matters.</strong> A screen reader reads the file name instead, or nothing; search engines lose the words that say what the image shows.</p>
+<p><strong>Likely fix.</strong> Add alt=&quot;what the image shows&quot;; for an image that is decoration only, alt=&quot;&quot;.</p>
+<details open><summary>1 page</summary><ul><li><a href="https://playwright-playground.com/content/page-audit">/content/page-audit</a> <span class="says">1 image: &lt;img src=&quot;/favicon.svg&quot;&gt;</span></li></ul></details></section>
+<section class="finding minor"><h2><span class="badge">minor</span> <span class="code">SITE-29</span> The site has no security.txt: someone who finds a hole has no way to report it</h2>
+<p><strong>Why it matters.</strong> Researchers who find a security problem look for /.well-known/security.txt to know whom to tell (RFC 9116); without it they may not report it, or report it publicly.</p>
+<p><strong>Likely fix.</strong> Publish /.well-known/security.txt with a Contact line (an email address or a form) and an Expires line.</p>
+<details open><summary>1 page</summary><ul><li><a href="https://playwright-playground.com/.well-known/security.txt">/.well-known/security.txt</a> <span class="says">answered 404</span></li></ul></details></section>
+<footer>Found by Suite Builder's crawler, which identifies itself in its User-Agent and obeys robots.txt. A major finding lets a visitor or a search engine down now; a minor one is worth fixing. Each lists every page the crawl saw it on; the crawl reads a sample of a big site, so a finding can reach further than it lists.</footer>
+</main></body></html>

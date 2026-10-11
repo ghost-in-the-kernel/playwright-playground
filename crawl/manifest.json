@@ -1,0 +1,34 @@
+{
+  "tool": "suite-builder",
+  "version": "1.39.0",
+  "build": {
+    "commit": "7bac34306bd467b867cd11ba88e25ebd92d482b7",
+    "branch": "main"
+  },
+  "framework": "playwright",
+  "generatedAt": "2026-10-11T11:05:13.490Z",
+  "command": "suite-builder build https://playwright-playground.com/",
+  "templates": "crawl/playwright-playground.com.templates.json",
+  "crawl": "crawl/playwright-playground.com.crawl.json",
+  "crawlFileSaved": "2026-10-11T11:05:13.311Z",
+  "accounts": [
+    {
+      "role": "user",
+      "file": "secrets/user.login",
+      "environment": [
+        "SUITE_USER_USERNAME",
+        "SUITE_USER_PASSWORD"
+      ],
+      "docked": "<Suite Builder's secrets folder, DOCK.md's last line>/<site>/user.login"
+    },
+    {
+      "role": "admin",
+      "file": "secrets/admin.login",
+      "environment": [
+        "SUITE_ADMIN_USERNAME",
+        "SUITE_ADMIN_PASSWORD"
+      ],
+      "docked": "<Suite Builder's secrets folder, DOCK.md's last line>/<site>/admin.login"
+    }
+  ]
+}

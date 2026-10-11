@@ -1,0 +1,409 @@
+{
+  "tool": "suite-builder",
+  "ledgerVersion": 1,
+  "entities": [
+    {
+      "id": "type:/",
+      "kind": "page-type",
+      "introducedAt": "0430946f22b9b0d5d7e2ad9e8b29257f1dd1d2a3e0e771a968dd1d1de895b5cd",
+      "cls": "HomePage",
+      "patterns": [
+        "/"
+      ],
+      "lifecycle": {
+        "state": "present",
+        "lastSeenIn": "0430946f22b9b0d5d7e2ad9e8b29257f1dd1d2a3e0e771a968dd1d1de895b5cd"
+      }
+    },
+    {
+      "id": "type:/basic/*",
+      "kind": "page-type",
+      "introducedAt": "0430946f22b9b0d5d7e2ad9e8b29257f1dd1d2a3e0e771a968dd1d1de895b5cd",
+      "cls": "BasicDetailPage",
+      "patterns": [
+        "/basic/*"
+      ],
+      "lifecycle": {
+        "state": "present",
+        "lastSeenIn": "0430946f22b9b0d5d7e2ad9e8b29257f1dd1d2a3e0e771a968dd1d1de895b5cd"
+      }
+    },
+    {
+      "id": "type:/dynamic/clock",
+      "kind": "page-type",
+      "introducedAt": "0430946f22b9b0d5d7e2ad9e8b29257f1dd1d2a3e0e771a968dd1d1de895b5cd",
+      "cls": "DynamicClockPage",
+      "patterns": [
+        "/dynamic/clock"
+      ],
+      "lifecycle": {
+        "state": "present",
+        "lastSeenIn": "0430946f22b9b0d5d7e2ad9e8b29257f1dd1d2a3e0e771a968dd1d1de895b5cd"
+      }
+    },
+    {
+      "id": "type:/content/attributes",
+      "kind": "page-type",
+      "introducedAt": "0430946f22b9b0d5d7e2ad9e8b29257f1dd1d2a3e0e771a968dd1d1de895b5cd",
+      "cls": "ContentAttributesPage",
+      "patterns": [
+        "/content/attributes"
+      ],
+      "lifecycle": {
+        "state": "present",
+        "lastSeenIn": "0430946f22b9b0d5d7e2ad9e8b29257f1dd1d2a3e0e771a968dd1d1de895b5cd"
+      }
+    },
+    {
+      "id": "type:/forms/validation",
+      "kind": "page-type",
+      "introducedAt": "0430946f22b9b0d5d7e2ad9e8b29257f1dd1d2a3e0e771a968dd1d1de895b5cd",
+      "cls": "FormsValidationPage",
+      "patterns": [
+        "/forms/validation"
+      ],
+      "lifecycle": {
+        "state": "present",
+        "lastSeenIn": "0430946f22b9b0d5d7e2ad9e8b29257f1dd1d2a3e0e771a968dd1d1de895b5cd"
+      }
+    },
+    {
+      "id": "type:/tables/*",
+      "kind": "page-type",
+      "introducedAt": "0430946f22b9b0d5d7e2ad9e8b29257f1dd1d2a3e0e771a968dd1d1de895b5cd",
+      "cls": "TablesDetailPage",
+      "patterns": [
+        "/tables/*"
+      ],
+      "lifecycle": {
+        "state": "present",
+        "lastSeenIn": "0430946f22b9b0d5d7e2ad9e8b29257f1dd1d2a3e0e771a968dd1d1de895b5cd"
+      }
+    },
+    {
+      "id": "type:/dialogs/*",
+      "kind": "page-type",
+      "introducedAt": "0430946f22b9b0d5d7e2ad9e8b29257f1dd1d2a3e0e771a968dd1d1de895b5cd",
+      "cls": "DialogsDetailPage",
+      "patterns": [
+        "/dialogs/*"
+      ],
+      "lifecycle": {
+        "state": "present",
+        "lastSeenIn": "0430946f22b9b0d5d7e2ad9e8b29257f1dd1d2a3e0e771a968dd1d1de895b5cd"
+      }
+    },
+    {
+      "id": "type:/dynamic/appear-disappear",
+      "kind": "page-type",
+      "introducedAt": "0430946f22b9b0d5d7e2ad9e8b29257f1dd1d2a3e0e771a968dd1d1de895b5cd",
+      "cls": "DynamicAppearDisappearPage",
+      "patterns": [
+        "/dynamic/appear-disappear"
+      ],
+      "lifecycle": {
+        "state": "present",
+        "lastSeenIn": "0430946f22b9b0d5d7e2ad9e8b29257f1dd1d2a3e0e771a968dd1d1de895b5cd"
+      }
+    },
+    {
+      "id": "type:/frames/*",
+      "kind": "page-type",
+      "introducedAt": "0430946f22b9b0d5d7e2ad9e8b29257f1dd1d2a3e0e771a968dd1d1de895b5cd",
+      "cls": "FramesDetailPage",
+      "patterns": [
+        "/frames/*"
+      ],
+      "lifecycle": {
+        "state": "present",
+        "lastSeenIn": "0430946f22b9b0d5d7e2ad9e8b29257f1dd1d2a3e0e771a968dd1d1de895b5cd"
+      }
+    },
+    {
+      "id": "type:/keyboard/actions",
+      "kind": "page-type",
+      "introducedAt": "0430946f22b9b0d5d7e2ad9e8b29257f1dd1d2a3e0e771a968dd1d1de895b5cd",
+      "cls": "KeyboardActionsPage",
+      "patterns": [
+        "/keyboard/actions"
+      ],
+      "lifecycle": {
+        "state": "present",
+        "lastSeenIn": "0430946f22b9b0d5d7e2ad9e8b29257f1dd1d2a3e0e771a968dd1d1de895b5cd"
+      }
+    },
+    {
+      "id": "type:/network/api",
+      "kind": "page-type",
+      "introducedAt": "0430946f22b9b0d5d7e2ad9e8b29257f1dd1d2a3e0e771a968dd1d1de895b5cd",
+      "cls": "NetworkApiPage",
+      "patterns": [
+        "/network/api"
+      ],
+      "lifecycle": {
+        "state": "present",
+        "lastSeenIn": "0430946f22b9b0d5d7e2ad9e8b29257f1dd1d2a3e0e771a968dd1d1de895b5cd"
+      }
+    },
+    {
+      "id": "type:/content/properties",
+      "kind": "page-type",
+      "introducedAt": "0430946f22b9b0d5d7e2ad9e8b29257f1dd1d2a3e0e771a968dd1d1de895b5cd",
+      "cls": "ContentPropertiesPage",
+      "patterns": [
+        "/content/properties"
+      ],
+      "lifecycle": {
+        "state": "present",
+        "lastSeenIn": "0430946f22b9b0d5d7e2ad9e8b29257f1dd1d2a3e0e771a968dd1d1de895b5cd"
+      }
+    },
+    {
+      "id": "type:/basic/inputs",
+      "kind": "page-type",
+      "introducedAt": "0430946f22b9b0d5d7e2ad9e8b29257f1dd1d2a3e0e771a968dd1d1de895b5cd",
+      "cls": "BasicInputsPage",
+      "patterns": [
+        "/basic/inputs"
+      ],
+      "lifecycle": {
+        "state": "present",
+        "lastSeenIn": "0430946f22b9b0d5d7e2ad9e8b29257f1dd1d2a3e0e771a968dd1d1de895b5cd"
+      }
+    },
+    {
+      "id": "type:/*/*",
+      "kind": "page-type",
+      "introducedAt": "0430946f22b9b0d5d7e2ad9e8b29257f1dd1d2a3e0e771a968dd1d1de895b5cd",
+      "cls": "SiteDetailPage",
+      "patterns": [
+        "/*/*"
+      ],
+      "lifecycle": {
+        "state": "present",
+        "lastSeenIn": "0430946f22b9b0d5d7e2ad9e8b29257f1dd1d2a3e0e771a968dd1d1de895b5cd"
+      }
+    },
+    {
+      "id": "type:/forms/autocomplete",
+      "kind": "page-type",
+      "introducedAt": "0430946f22b9b0d5d7e2ad9e8b29257f1dd1d2a3e0e771a968dd1d1de895b5cd",
+      "cls": "FormsAutocompletePage",
+      "patterns": [
+        "/forms/autocomplete"
+      ],
+      "lifecycle": {
+        "state": "present",
+        "lastSeenIn": "0430946f22b9b0d5d7e2ad9e8b29257f1dd1d2a3e0e771a968dd1d1de895b5cd"
+      }
+    },
+    {
+      "id": "type:/dialogs/modal",
+      "kind": "page-type",
+      "introducedAt": "0430946f22b9b0d5d7e2ad9e8b29257f1dd1d2a3e0e771a968dd1d1de895b5cd",
+      "cls": "DialogsModalPage",
+      "patterns": [
+        "/dialogs/modal"
+      ],
+      "lifecycle": {
+        "state": "present",
+        "lastSeenIn": "0430946f22b9b0d5d7e2ad9e8b29257f1dd1d2a3e0e771a968dd1d1de895b5cd"
+      }
+    },
+    {
+      "id": "type:/content/aria-widgets",
+      "kind": "page-type",
+      "introducedAt": "0430946f22b9b0d5d7e2ad9e8b29257f1dd1d2a3e0e771a968dd1d1de895b5cd",
+      "cls": "ContentAriaWidgetsPage",
+      "patterns": [
+        "/content/aria-widgets"
+      ],
+      "lifecycle": {
+        "state": "present",
+        "lastSeenIn": "0430946f22b9b0d5d7e2ad9e8b29257f1dd1d2a3e0e771a968dd1d1de895b5cd"
+      }
+    },
+    {
+      "id": "type:/basic/checkboxes",
+      "kind": "page-type",
+      "introducedAt": "0430946f22b9b0d5d7e2ad9e8b29257f1dd1d2a3e0e771a968dd1d1de895b5cd",
+      "cls": "BasicCheckboxesPage",
+      "patterns": [
+        "/basic/checkboxes"
+      ],
+      "lifecycle": {
+        "state": "present",
+        "lastSeenIn": "0430946f22b9b0d5d7e2ad9e8b29257f1dd1d2a3e0e771a968dd1d1de895b5cd"
+      }
+    },
+    {
+      "id": "type:/frames/nested",
+      "kind": "page-type",
+      "introducedAt": "0430946f22b9b0d5d7e2ad9e8b29257f1dd1d2a3e0e771a968dd1d1de895b5cd",
+      "cls": "FramesNestedPage",
+      "patterns": [
+        "/frames/nested"
+      ],
+      "lifecycle": {
+        "state": "present",
+        "lastSeenIn": "0430946f22b9b0d5d7e2ad9e8b29257f1dd1d2a3e0e771a968dd1d1de895b5cd"
+      }
+    },
+    {
+      "id": "type:/keyboard/drag-and-drop",
+      "kind": "page-type",
+      "introducedAt": "0430946f22b9b0d5d7e2ad9e8b29257f1dd1d2a3e0e771a968dd1d1de895b5cd",
+      "cls": "KeyboardDragAndDropPage",
+      "patterns": [
+        "/keyboard/drag-and-drop"
+      ],
+      "lifecycle": {
+        "state": "present",
+        "lastSeenIn": "0430946f22b9b0d5d7e2ad9e8b29257f1dd1d2a3e0e771a968dd1d1de895b5cd"
+      }
+    },
+    {
+      "id": "type:/network/api-testing",
+      "kind": "page-type",
+      "introducedAt": "0430946f22b9b0d5d7e2ad9e8b29257f1dd1d2a3e0e771a968dd1d1de895b5cd",
+      "cls": "NetworkApiTestingPage",
+      "patterns": [
+        "/network/api-testing"
+      ],
+      "lifecycle": {
+        "state": "present",
+        "lastSeenIn": "0430946f22b9b0d5d7e2ad9e8b29257f1dd1d2a3e0e771a968dd1d1de895b5cd"
+      }
+    },
+    {
+      "id": "type:/*/*#2",
+      "kind": "page-type",
+      "introducedAt": "0430946f22b9b0d5d7e2ad9e8b29257f1dd1d2a3e0e771a968dd1d1de895b5cd",
+      "cls": "SiteDetailPage2",
+      "patterns": [
+        "/*/*"
+      ],
+      "lifecycle": {
+        "state": "present",
+        "lastSeenIn": "0430946f22b9b0d5d7e2ad9e8b29257f1dd1d2a3e0e771a968dd1d1de895b5cd"
+      }
+    },
+    {
+      "id": "type:/tables/actions",
+      "kind": "page-type",
+      "introducedAt": "0430946f22b9b0d5d7e2ad9e8b29257f1dd1d2a3e0e771a968dd1d1de895b5cd",
+      "cls": "TablesActionsPage",
+      "patterns": [
+        "/tables/actions"
+      ],
+      "lifecycle": {
+        "state": "present",
+        "lastSeenIn": "0430946f22b9b0d5d7e2ad9e8b29257f1dd1d2a3e0e771a968dd1d1de895b5cd"
+      }
+    },
+    {
+      "id": "type:/basic/radio-buttons",
+      "kind": "page-type",
+      "introducedAt": "0430946f22b9b0d5d7e2ad9e8b29257f1dd1d2a3e0e771a968dd1d1de895b5cd",
+      "cls": "BasicRadioButtonsPage",
+      "patterns": [
+        "/basic/radio-buttons"
+      ],
+      "lifecycle": {
+        "state": "present",
+        "lastSeenIn": "0430946f22b9b0d5d7e2ad9e8b29257f1dd1d2a3e0e771a968dd1d1de895b5cd"
+      }
+    },
+    {
+      "id": "type:/dynamic/actionability",
+      "kind": "page-type",
+      "introducedAt": "0430946f22b9b0d5d7e2ad9e8b29257f1dd1d2a3e0e771a968dd1d1de895b5cd",
+      "cls": "DynamicActionabilityPage",
+      "patterns": [
+        "/dynamic/actionability"
+      ],
+      "lifecycle": {
+        "state": "present",
+        "lastSeenIn": "0430946f22b9b0d5d7e2ad9e8b29257f1dd1d2a3e0e771a968dd1d1de895b5cd"
+      }
+    },
+    {
+      "id": "type:/basic/dropdown",
+      "kind": "page-type",
+      "introducedAt": "0430946f22b9b0d5d7e2ad9e8b29257f1dd1d2a3e0e771a968dd1d1de895b5cd",
+      "cls": "BasicDropdownPage",
+      "patterns": [
+        "/basic/dropdown"
+      ],
+      "lifecycle": {
+        "state": "present",
+        "lastSeenIn": "0430946f22b9b0d5d7e2ad9e8b29257f1dd1d2a3e0e771a968dd1d1de895b5cd"
+      }
+    },
+    {
+      "id": "type:/content/page-audit",
+      "kind": "page-type",
+      "introducedAt": "0430946f22b9b0d5d7e2ad9e8b29257f1dd1d2a3e0e771a968dd1d1de895b5cd",
+      "cls": "ContentPageAuditPage",
+      "patterns": [
+        "/content/page-audit"
+      ],
+      "lifecycle": {
+        "state": "present",
+        "lastSeenIn": "0430946f22b9b0d5d7e2ad9e8b29257f1dd1d2a3e0e771a968dd1d1de895b5cd"
+      }
+    },
+    {
+      "id": "type:/tables/data-grid",
+      "kind": "page-type",
+      "introducedAt": "0430946f22b9b0d5d7e2ad9e8b29257f1dd1d2a3e0e771a968dd1d1de895b5cd",
+      "cls": "TablesDataGridPage",
+      "patterns": [
+        "/tables/data-grid"
+      ],
+      "lifecycle": {
+        "state": "present",
+        "lastSeenIn": "0430946f22b9b0d5d7e2ad9e8b29257f1dd1d2a3e0e771a968dd1d1de895b5cd"
+      }
+    },
+    {
+      "id": "type:/network/mocking",
+      "kind": "page-type",
+      "introducedAt": "0430946f22b9b0d5d7e2ad9e8b29257f1dd1d2a3e0e771a968dd1d1de895b5cd",
+      "cls": "NetworkMockingPage",
+      "patterns": [
+        "/network/mocking"
+      ],
+      "lifecycle": {
+        "state": "present",
+        "lastSeenIn": "0430946f22b9b0d5d7e2ad9e8b29257f1dd1d2a3e0e771a968dd1d1de895b5cd"
+      }
+    },
+    {
+      "id": "type:/locators/challenges",
+      "kind": "page-type",
+      "introducedAt": "0430946f22b9b0d5d7e2ad9e8b29257f1dd1d2a3e0e771a968dd1d1de895b5cd",
+      "cls": "LocatorsChallengesPage",
+      "patterns": [
+        "/locators/challenges"
+      ],
+      "lifecycle": {
+        "state": "present",
+        "lastSeenIn": "0430946f22b9b0d5d7e2ad9e8b29257f1dd1d2a3e0e771a968dd1d1de895b5cd"
+      }
+    },
+    {
+      "id": "type:/dialogs/new-tab-content",
+      "kind": "page-type",
+      "introducedAt": "0430946f22b9b0d5d7e2ad9e8b29257f1dd1d2a3e0e771a968dd1d1de895b5cd",
+      "cls": "DialogsNewTabContentPage",
+      "patterns": [
+        "/dialogs/new-tab-content"
+      ],
+      "lifecycle": {
+        "state": "present",
+        "lastSeenIn": "0430946f22b9b0d5d7e2ad9e8b29257f1dd1d2a3e0e771a968dd1d1de895b5cd"
+      }
+    }
+  ]
+}

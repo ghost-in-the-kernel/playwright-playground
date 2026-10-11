@@ -1,0 +1,3053 @@
+{
+  "tool": "suite-builder",
+  "kind": "templates",
+  "version": 2,
+  "startUrl": "https://playwright-playground.com/",
+  "origin": "https://playwright-playground.com",
+  "pagesRead": 41,
+  "menu": [
+    {
+      "to": "https://playwright-playground.com/basic/buttons",
+      "href": "/basic/buttons",
+      "text": "Buttons",
+      "region": "header",
+      "seenOn": "https://playwright-playground.com/",
+      "template": "basic-detail"
+    },
+    {
+      "to": "https://playwright-playground.com/basic/inputs",
+      "href": "/basic/inputs",
+      "text": "Inputs",
+      "region": "header",
+      "seenOn": "https://playwright-playground.com/",
+      "template": "basic-inputs"
+    },
+    {
+      "to": "https://playwright-playground.com/basic/checkboxes",
+      "href": "/basic/checkboxes",
+      "text": "Checkboxes",
+      "region": "header",
+      "seenOn": "https://playwright-playground.com/",
+      "template": "basic-checkboxes"
+    },
+    {
+      "to": "https://playwright-playground.com/basic/radio-buttons",
+      "href": "/basic/radio-buttons",
+      "text": "Radio Buttons",
+      "region": "header",
+      "seenOn": "https://playwright-playground.com/",
+      "template": "basic-radio-buttons"
+    },
+    {
+      "to": "https://playwright-playground.com/basic/dropdown",
+      "href": "/basic/dropdown",
+      "text": "Dropdown",
+      "region": "header",
+      "seenOn": "https://playwright-playground.com/",
+      "template": "basic-dropdown"
+    },
+    {
+      "to": "https://playwright-playground.com/basic/hover",
+      "href": "/basic/hover",
+      "text": "Hover",
+      "region": "header",
+      "seenOn": "https://playwright-playground.com/",
+      "template": "basic-detail"
+    },
+    {
+      "to": "https://playwright-playground.com/locators/challenges",
+      "href": "/locators/challenges",
+      "text": "Locator Challenges",
+      "region": "header",
+      "seenOn": "https://playwright-playground.com/",
+      "template": "locators-challenges"
+    },
+    {
+      "to": "https://playwright-playground.com/dynamic/appear-disappear",
+      "href": "/dynamic/appear-disappear",
+      "text": "Appear & Disappear",
+      "region": "header",
+      "seenOn": "https://playwright-playground.com/",
+      "template": "dynamic-appear-disappear"
+    },
+    {
+      "to": "https://playwright-playground.com/dynamic/changing-text",
+      "href": "/dynamic/changing-text",
+      "text": "Changing Text",
+      "region": "header",
+      "seenOn": "https://playwright-playground.com/",
+      "template": "site-detail"
+    },
+    {
+      "to": "https://playwright-playground.com/dynamic/progress-bar",
+      "href": "/dynamic/progress-bar",
+      "text": "Progress Bar",
+      "region": "header",
+      "seenOn": "https://playwright-playground.com/",
+      "template": "site-detail"
+    },
+    {
+      "to": "https://playwright-playground.com/dynamic/actionability",
+      "href": "/dynamic/actionability",
+      "text": "Actionability",
+      "region": "header",
+      "seenOn": "https://playwright-playground.com/",
+      "template": "dynamic-actionability"
+    },
+    {
+      "to": "https://playwright-playground.com/dynamic/flaky-lab",
+      "href": "/dynamic/flaky-lab",
+      "text": "Flaky Lab",
+      "region": "header",
+      "seenOn": "https://playwright-playground.com/",
+      "template": "site-detail"
+    },
+    {
+      "to": "https://playwright-playground.com/dynamic/clock",
+      "href": "/dynamic/clock",
+      "text": "Timers & Clock",
+      "region": "header",
+      "seenOn": "https://playwright-playground.com/",
+      "template": "dynamic-clock"
+    },
+    {
+      "to": "https://playwright-playground.com/forms/validation",
+      "href": "/forms/validation",
+      "text": "Form Validation",
+      "region": "header",
+      "seenOn": "https://playwright-playground.com/",
+      "template": "forms-validation"
+    },
+    {
+      "to": "https://playwright-playground.com/forms/autocomplete",
+      "href": "/forms/autocomplete",
+      "text": "Autocomplete",
+      "region": "header",
+      "seenOn": "https://playwright-playground.com/",
+      "template": "forms-autocomplete"
+    },
+    {
+      "to": "https://playwright-playground.com/forms/file-upload",
+      "href": "/forms/file-upload",
+      "text": "File Upload",
+      "region": "header",
+      "seenOn": "https://playwright-playground.com/",
+      "template": "site-detail-page2"
+    },
+    {
+      "to": "https://playwright-playground.com/forms/file-download",
+      "href": "/forms/file-download",
+      "text": "File Download",
+      "region": "header",
+      "seenOn": "https://playwright-playground.com/",
+      "template": "site-detail-page2"
+    },
+    {
+      "to": "https://playwright-playground.com/tables/basic",
+      "href": "/tables/basic",
+      "text": "Basic Table",
+      "region": "header",
+      "seenOn": "https://playwright-playground.com/",
+      "template": "tables-detail"
+    },
+    {
+      "to": "https://playwright-playground.com/tables/sortable",
+      "href": "/tables/sortable",
+      "text": "Sortable Table",
+      "region": "header",
+      "seenOn": "https://playwright-playground.com/",
+      "template": "tables-detail"
+    },
+    {
+      "to": "https://playwright-playground.com/tables/actions",
+      "href": "/tables/actions",
+      "text": "Table Actions",
+      "region": "header",
+      "seenOn": "https://playwright-playground.com/",
+      "template": "tables-actions"
+    },
+    {
+      "to": "https://playwright-playground.com/tables/data-grid",
+      "href": "/tables/data-grid",
+      "text": "Data Grid",
+      "region": "header",
+      "seenOn": "https://playwright-playground.com/",
+      "template": "tables-data-grid"
+    },
+    {
+      "to": "https://playwright-playground.com/dialogs/javascript",
+      "href": "/dialogs/javascript",
+      "text": "JavaScript Dialogs",
+      "region": "header",
+      "seenOn": "https://playwright-playground.com/",
+      "template": "dialogs-detail"
+    },
+    {
+      "to": "https://playwright-playground.com/dialogs/modal",
+      "href": "/dialogs/modal",
+      "text": "Modal",
+      "region": "header",
+      "seenOn": "https://playwright-playground.com/",
+      "template": "dialogs-modal"
+    },
+    {
+      "to": "https://playwright-playground.com/dialogs/new-window",
+      "href": "/dialogs/new-window",
+      "text": "New Window",
+      "region": "header",
+      "seenOn": "https://playwright-playground.com/",
+      "template": "dialogs-detail"
+    },
+    {
+      "to": "https://playwright-playground.com/dialogs/new-tab",
+      "href": "/dialogs/new-tab",
+      "text": "New Tab",
+      "region": "header",
+      "seenOn": "https://playwright-playground.com/",
+      "template": "dialogs-detail"
+    },
+    {
+      "to": "https://playwright-playground.com/frames/iframe",
+      "href": "/frames/iframe",
+      "text": "iFrame Basics",
+      "region": "header",
+      "seenOn": "https://playwright-playground.com/",
+      "template": "frames-detail"
+    },
+    {
+      "to": "https://playwright-playground.com/frames/nested",
+      "href": "/frames/nested",
+      "text": "Nested & Multiple Frames",
+      "region": "header",
+      "seenOn": "https://playwright-playground.com/",
+      "template": "frames-nested"
+    },
+    {
+      "to": "https://playwright-playground.com/frames/embeds",
+      "href": "/frames/embeds",
+      "text": "Embedded Widgets",
+      "region": "header",
+      "seenOn": "https://playwright-playground.com/",
+      "template": "frames-detail"
+    },
+    {
+      "to": "https://playwright-playground.com/keyboard/actions",
+      "href": "/keyboard/actions",
+      "text": "Keyboard Actions",
+      "region": "header",
+      "seenOn": "https://playwright-playground.com/",
+      "template": "keyboard-actions"
+    },
+    {
+      "to": "https://playwright-playground.com/keyboard/drag-and-drop",
+      "href": "/keyboard/drag-and-drop",
+      "text": "Drag & Drop",
+      "region": "header",
+      "seenOn": "https://playwright-playground.com/",
+      "template": "keyboard-drag-and-drop"
+    },
+    {
+      "to": "https://playwright-playground.com/keyboard/mouse-actions",
+      "href": "/keyboard/mouse-actions",
+      "text": "Mouse Actions",
+      "region": "header",
+      "seenOn": "https://playwright-playground.com/",
+      "template": "site-detail-page2"
+    },
+    {
+      "to": "https://playwright-playground.com/content/attributes",
+      "href": "/content/attributes",
+      "text": "Content & Attributes",
+      "region": "header",
+      "seenOn": "https://playwright-playground.com/",
+      "template": "content-attributes"
+    },
+    {
+      "to": "https://playwright-playground.com/content/properties",
+      "href": "/content/properties",
+      "text": "Attributes vs Properties",
+      "region": "header",
+      "seenOn": "https://playwright-playground.com/",
+      "template": "content-properties"
+    },
+    {
+      "to": "https://playwright-playground.com/content/aria-widgets",
+      "href": "/content/aria-widgets",
+      "text": "ARIA Widgets",
+      "region": "header",
+      "seenOn": "https://playwright-playground.com/",
+      "template": "content-aria-widgets"
+    },
+    {
+      "to": "https://playwright-playground.com/content/shadow-dom",
+      "href": "/content/shadow-dom",
+      "text": "Shadow DOM",
+      "region": "header",
+      "seenOn": "https://playwright-playground.com/",
+      "template": "site-detail"
+    },
+    {
+      "to": "https://playwright-playground.com/content/page-audit",
+      "href": "/content/page-audit",
+      "text": "Page Audit",
+      "region": "header",
+      "seenOn": "https://playwright-playground.com/",
+      "template": "content-page-audit"
+    },
+    {
+      "to": "https://playwright-playground.com/network/api",
+      "href": "/network/api",
+      "text": "API Playground",
+      "region": "header",
+      "seenOn": "https://playwright-playground.com/",
+      "template": "network-api"
+    },
+    {
+      "to": "https://playwright-playground.com/network/api-testing",
+      "href": "/network/api-testing",
+      "text": "API Testing",
+      "region": "header",
+      "seenOn": "https://playwright-playground.com/",
+      "template": "network-api-testing"
+    },
+    {
+      "to": "https://playwright-playground.com/network/mocking",
+      "href": "/network/mocking",
+      "text": "Network Mocking",
+      "region": "header",
+      "seenOn": "https://playwright-playground.com/",
+      "template": "network-mocking"
+    },
+    {
+      "to": "https://playwright-playground.com/",
+      "href": "/",
+      "text": "Home",
+      "region": "header",
+      "seenOn": "https://playwright-playground.com/basic/hover",
+      "template": "home"
+    }
+  ],
+  "templates": [
+    {
+      "id": "home",
+      "name": "HomePage",
+      "urlPatterns": [
+        "/"
+      ],
+      "pages": [
+        "https://playwright-playground.com/"
+      ],
+      "repeated": false,
+      "knownUrls": 1,
+      "titlePattern": "QA Playground · Free Playwright Practice Exercises",
+      "sharedHeadings": [
+        "Learn Playwright by testing a real app",
+        "How it works",
+        "Testing Areas",
+        "Basic Elements",
+        "Locators",
+        "Dynamic Elements",
+        "Forms",
+        "Authentication",
+        "Tables",
+        "Dialogs & Windows",
+        "Frames",
+        "Mouse & Keyboard",
+        "Content & Attributes",
+        "Network & API"
+      ],
+      "inMenu": true,
+      "linksTo": [],
+      "controls": [
+        {
+          "kind": "button",
+          "words": [
+            "All levels"
+          ],
+          "region": "main",
+          "xpath": "//button[normalize-space()='All levels']",
+          "stability": "OK",
+          "pages": 1,
+          "seenOn": "https://playwright-playground.com/"
+        },
+        {
+          "kind": "button",
+          "words": [
+            "Beginner"
+          ],
+          "region": "main",
+          "xpath": "//button[normalize-space()='Beginner']",
+          "stability": "OK",
+          "pages": 1,
+          "seenOn": "https://playwright-playground.com/"
+        },
+        {
+          "kind": "button",
+          "words": [
+            "Intermediate"
+          ],
+          "region": "main",
+          "xpath": "//button[normalize-space()='Intermediate']",
+          "stability": "OK",
+          "pages": 1,
+          "seenOn": "https://playwright-playground.com/"
+        },
+        {
+          "kind": "button",
+          "words": [
+            "Advanced"
+          ],
+          "region": "main",
+          "xpath": "//button[normalize-space()='Advanced']",
+          "stability": "OK",
+          "pages": 1,
+          "seenOn": "https://playwright-playground.com/"
+        }
+      ],
+      "why": {
+        "rule": "start-page",
+        "says": "the start page: always a page type of its own, since every test starts there"
+      }
+    },
+    {
+      "id": "basic-detail",
+      "name": "BasicDetailPage",
+      "urlPatterns": [
+        "/basic/*"
+      ],
+      "pages": [
+        "https://playwright-playground.com/basic/hover",
+        "https://playwright-playground.com/basic/buttons"
+      ],
+      "repeated": true,
+      "knownUrls": 2,
+      "titlePattern": "{name} · QA Playground",
+      "sharedHeadings": [],
+      "inMenu": true,
+      "linksTo": [],
+      "controls": [
+        {
+          "kind": "button",
+          "words": [
+            "Move mouse here"
+          ],
+          "region": "main",
+          "xpath": "//button[normalize-space()='Move mouse here']",
+          "stability": "OK",
+          "pages": 1,
+          "seenOn": "https://playwright-playground.com/basic/hover"
+        },
+        {
+          "kind": "button",
+          "words": [
+            "Shipping info"
+          ],
+          "region": "main",
+          "xpath": "//button[normalize-space()='Shipping info']",
+          "stability": "OK",
+          "pages": 1,
+          "seenOn": "https://playwright-playground.com/basic/hover"
+        },
+        {
+          "kind": "button",
+          "words": [
+            "Click me"
+          ],
+          "region": "main",
+          "xpath": "//button[normalize-space()='Click me']",
+          "stability": "OK",
+          "pages": 1,
+          "seenOn": "https://playwright-playground.com/basic/buttons"
+        },
+        {
+          "kind": "button",
+          "words": [
+            "Primary action"
+          ],
+          "region": "main",
+          "xpath": "//button[normalize-space()='Primary action']",
+          "stability": "OK",
+          "pages": 1,
+          "seenOn": "https://playwright-playground.com/basic/buttons"
+        },
+        {
+          "kind": "button",
+          "words": [
+            "Disabled button"
+          ],
+          "region": "main",
+          "disabled": true,
+          "xpath": "//button[normalize-space()='Disabled button']",
+          "stability": "OK",
+          "pages": 1,
+          "seenOn": "https://playwright-playground.com/basic/buttons"
+        },
+        {
+          "kind": "button",
+          "words": [
+            "Double click me"
+          ],
+          "region": "main",
+          "xpath": "//button[normalize-space()='Double click me']",
+          "stability": "OK",
+          "pages": 1,
+          "seenOn": "https://playwright-playground.com/basic/buttons"
+        },
+        {
+          "kind": "button",
+          "words": [
+            "Right click me"
+          ],
+          "region": "main",
+          "xpath": "//button[normalize-space()='Right click me']",
+          "stability": "OK",
+          "pages": 1,
+          "seenOn": "https://playwright-playground.com/basic/buttons"
+        }
+      ],
+      "why": {
+        "rule": "family-by-address",
+        "says": "its 2 pages read look alike (layout 74% the same, headings 40%) and share the address pattern /basic/*; joined by: the layouts agree, with some headings shared (1 comparison)",
+        "joinedBy": [
+          {
+            "rule": "layout-and-some-headings",
+            "pairs": 1
+          }
+        ]
+      }
+    },
+    {
+      "id": "dynamic-clock",
+      "name": "DynamicClockPage",
+      "urlPatterns": [
+        "/dynamic/*"
+      ],
+      "pages": [
+        "https://playwright-playground.com/dynamic/clock"
+      ],
+      "repeated": false,
+      "knownUrls": 1,
+      "titlePattern": "Timers & Clock · QA Playground",
+      "sharedHeadings": [
+        "Timers & Clock",
+        "Session timeout",
+        "Weekend promotion"
+      ],
+      "inMenu": true,
+      "linksTo": [],
+      "controls": [
+        {
+          "kind": "button",
+          "words": [
+            "Start session"
+          ],
+          "region": "main",
+          "xpath": "//button[normalize-space()='Start session']",
+          "stability": "OK",
+          "pages": 1,
+          "seenOn": "https://playwright-playground.com/dynamic/clock"
+        }
+      ],
+      "why": {
+        "rule": "unlike-others",
+        "says": "no other page read is enough like it (the closest, /dynamic/changing-text, shares 84% of its layout and 0% of its headings)"
+      }
+    },
+    {
+      "id": "content-attributes",
+      "name": "ContentAttributesPage",
+      "urlPatterns": [
+        "/content/*"
+      ],
+      "pages": [
+        "https://playwright-playground.com/content/attributes"
+      ],
+      "repeated": false,
+      "knownUrls": 1,
+      "titlePattern": "Content & Attributes · QA Playground",
+      "sharedHeadings": [
+        "Content & Attributes",
+        "Text Content",
+        "Input Value",
+        "Input value",
+        "Attributes",
+        "Element State"
+      ],
+      "inMenu": true,
+      "linksTo": [],
+      "controls": [
+        {
+          "kind": "text field",
+          "words": [
+            "Input value"
+          ],
+          "region": "main",
+          "filled": true,
+          "xpath": "//input[@id='content-input']",
+          "stability": "Strong",
+          "pages": 1,
+          "seenOn": "https://playwright-playground.com/content/attributes"
+        },
+        {
+          "kind": "button",
+          "words": [
+            "Click Me"
+          ],
+          "region": "main",
+          "xpath": "//button[normalize-space()='Click Me']",
+          "stability": "OK",
+          "pages": 1,
+          "seenOn": "https://playwright-playground.com/content/attributes"
+        },
+        {
+          "kind": "button",
+          "words": [
+            "Disabled Button"
+          ],
+          "region": "main",
+          "disabled": true,
+          "xpath": "//button[normalize-space()='Disabled Button']",
+          "stability": "OK",
+          "pages": 1,
+          "seenOn": "https://playwright-playground.com/content/attributes"
+        }
+      ],
+      "why": {
+        "rule": "unlike-others",
+        "says": "no other page read is enough like it (the closest, /frames/iframe, shares 79% of its layout and 0% of its headings)"
+      }
+    },
+    {
+      "id": "forms-validation",
+      "name": "FormsValidationPage",
+      "urlPatterns": [
+        "/forms/*"
+      ],
+      "pages": [
+        "https://playwright-playground.com/forms/validation"
+      ],
+      "repeated": false,
+      "knownUrls": 1,
+      "titlePattern": "Form Validation · QA Playground",
+      "sharedHeadings": [
+        "Form Validation",
+        "Registration Form",
+        "Email",
+        "Age"
+      ],
+      "inMenu": true,
+      "linksTo": [],
+      "controls": [
+        {
+          "kind": "email field",
+          "words": [
+            "Email",
+            "name@example.com"
+          ],
+          "region": "main",
+          "form": "Registration Form",
+          "required": true,
+          "noValidate": true,
+          "xpath": "//input[@id='validation-email']",
+          "stability": "Strong",
+          "pages": 1,
+          "seenOn": "https://playwright-playground.com/forms/validation"
+        },
+        {
+          "kind": "number field",
+          "words": [
+            "Age"
+          ],
+          "region": "main",
+          "form": "Registration Form",
+          "required": true,
+          "noValidate": true,
+          "xpath": "//input[@id='validation-age']",
+          "stability": "Strong",
+          "pages": 1,
+          "seenOn": "https://playwright-playground.com/forms/validation"
+        },
+        {
+          "kind": "button",
+          "words": [
+            "Create account"
+          ],
+          "region": "main",
+          "form": "Registration Form",
+          "noValidate": true,
+          "xpath": "//button[normalize-space()='Create account']",
+          "stability": "OK",
+          "pages": 1,
+          "seenOn": "https://playwright-playground.com/forms/validation"
+        }
+      ],
+      "why": {
+        "rule": "unlike-others",
+        "says": "no other page read is enough like it (the closest, /dialogs/new-tab, shares 84% of its layout and 0% of its headings)"
+      }
+    },
+    {
+      "id": "tables-detail",
+      "name": "TablesDetailPage",
+      "urlPatterns": [
+        "/tables/*"
+      ],
+      "pages": [
+        "https://playwright-playground.com/tables/basic",
+        "https://playwright-playground.com/tables/sortable"
+      ],
+      "repeated": true,
+      "knownUrls": 2,
+      "titlePattern": "{name} Table · QA Playground",
+      "sharedHeadings": [],
+      "inMenu": true,
+      "linksTo": [],
+      "controls": [
+        {
+          "kind": "button",
+          "words": [
+            "First Name ↑"
+          ],
+          "region": "main",
+          "xpath": "//button[normalize-space()='First Name ↑']",
+          "stability": "OK",
+          "pages": 1,
+          "seenOn": "https://playwright-playground.com/tables/sortable"
+        },
+        {
+          "kind": "button",
+          "words": [
+            "Last Name"
+          ],
+          "region": "main",
+          "xpath": "//button[normalize-space()='Last Name']",
+          "stability": "OK",
+          "pages": 1,
+          "seenOn": "https://playwright-playground.com/tables/sortable"
+        },
+        {
+          "kind": "button",
+          "words": [
+            "Age"
+          ],
+          "region": "main",
+          "xpath": "//button[normalize-space()='Age']",
+          "stability": "OK",
+          "pages": 1,
+          "seenOn": "https://playwright-playground.com/tables/sortable"
+        },
+        {
+          "kind": "button",
+          "words": [
+            "Score"
+          ],
+          "region": "main",
+          "xpath": "//button[normalize-space()='Score']",
+          "stability": "OK",
+          "pages": 1,
+          "seenOn": "https://playwright-playground.com/tables/sortable"
+        },
+        {
+          "kind": "button",
+          "words": [
+            "Role"
+          ],
+          "region": "main",
+          "xpath": "//button[normalize-space()='Role']",
+          "stability": "OK",
+          "pages": 1,
+          "seenOn": "https://playwright-playground.com/tables/sortable"
+        }
+      ],
+      "why": {
+        "rule": "family-by-address",
+        "says": "its 2 pages read look alike (layout 86% the same, headings 10%) and share the address pattern /tables/*; joined by: a listing: nearly the same layout, in one folder pattern (1 comparison)",
+        "joinedBy": [
+          {
+            "rule": "listing-folder",
+            "pairs": 1
+          }
+        ]
+      }
+    },
+    {
+      "id": "dialogs-detail",
+      "name": "DialogsDetailPage",
+      "urlPatterns": [
+        "/dialogs/*"
+      ],
+      "pages": [
+        "https://playwright-playground.com/dialogs/javascript",
+        "https://playwright-playground.com/dialogs/new-window",
+        "https://playwright-playground.com/dialogs/new-tab"
+      ],
+      "repeated": true,
+      "knownUrls": 3,
+      "titlePattern": null,
+      "sharedHeadings": [],
+      "inMenu": true,
+      "linksTo": [
+        {
+          "template": "dialogs-new-tab-content",
+          "count": 1,
+          "example": {
+            "from": "https://playwright-playground.com/dialogs/new-tab",
+            "to": "https://playwright-playground.com/dialogs/new-tab-content",
+            "href": "/dialogs/new-tab-content",
+            "text": "Open New Tab",
+            "newTab": true
+          }
+        }
+      ],
+      "controls": [
+        {
+          "kind": "button",
+          "words": [
+            "Alert"
+          ],
+          "region": "main",
+          "xpath": "//button[normalize-space()='Alert']",
+          "stability": "OK",
+          "pages": 1,
+          "seenOn": "https://playwright-playground.com/dialogs/javascript"
+        },
+        {
+          "kind": "button",
+          "words": [
+            "Confirm"
+          ],
+          "region": "main",
+          "xpath": "//button[normalize-space()='Confirm']",
+          "stability": "OK",
+          "pages": 1,
+          "seenOn": "https://playwright-playground.com/dialogs/javascript"
+        },
+        {
+          "kind": "button",
+          "words": [
+            "Prompt"
+          ],
+          "region": "main",
+          "xpath": "//button[normalize-space()='Prompt']",
+          "stability": "OK",
+          "pages": 1,
+          "seenOn": "https://playwright-playground.com/dialogs/javascript"
+        },
+        {
+          "kind": "button",
+          "words": [
+            "Open New Window"
+          ],
+          "region": "main",
+          "xpath": "//button[normalize-space()='Open New Window']",
+          "stability": "OK",
+          "pages": 1,
+          "seenOn": "https://playwright-playground.com/dialogs/new-window"
+        }
+      ],
+      "why": {
+        "rule": "family-by-address",
+        "says": "its 3 pages read look alike (layout 90% the same, headings 33%) and share the address pattern /dialogs/*; joined by: a listing: nearly the same layout, in one folder pattern (2 comparisons); the headings agree, with some layout shared (1 comparison)",
+        "joinedBy": [
+          {
+            "rule": "listing-folder",
+            "pairs": 2
+          },
+          {
+            "rule": "headings-agree",
+            "pairs": 1
+          }
+        ]
+      }
+    },
+    {
+      "id": "dynamic-appear-disappear",
+      "name": "DynamicAppearDisappearPage",
+      "urlPatterns": [
+        "/dynamic/*"
+      ],
+      "pages": [
+        "https://playwright-playground.com/dynamic/appear-disappear"
+      ],
+      "repeated": false,
+      "knownUrls": 1,
+      "titlePattern": "Appear & Disappear · QA Playground",
+      "sharedHeadings": [
+        "Appear & Disappear",
+        "Delayed element",
+        "Loading spinner",
+        "Toast notification",
+        "Hidden or removed"
+      ],
+      "inMenu": true,
+      "linksTo": [],
+      "controls": [
+        {
+          "kind": "button",
+          "words": [
+            "Show element"
+          ],
+          "region": "main",
+          "xpath": "//button[normalize-space()='Show element']",
+          "stability": "OK",
+          "pages": 1,
+          "seenOn": "https://playwright-playground.com/dynamic/appear-disappear"
+        },
+        {
+          "kind": "button",
+          "words": [
+            "Load slowly"
+          ],
+          "region": "main",
+          "xpath": "//button[normalize-space()='Load slowly']",
+          "stability": "OK",
+          "pages": 1,
+          "seenOn": "https://playwright-playground.com/dynamic/appear-disappear"
+        },
+        {
+          "kind": "button",
+          "words": [
+            "Start loading"
+          ],
+          "region": "main",
+          "xpath": "//button[normalize-space()='Start loading']",
+          "stability": "OK",
+          "pages": 1,
+          "seenOn": "https://playwright-playground.com/dynamic/appear-disappear"
+        },
+        {
+          "kind": "button",
+          "words": [
+            "Save draft"
+          ],
+          "region": "main",
+          "xpath": "//button[normalize-space()='Save draft']",
+          "stability": "OK",
+          "pages": 1,
+          "seenOn": "https://playwright-playground.com/dynamic/appear-disappear"
+        },
+        {
+          "kind": "button",
+          "words": [
+            "Remove element"
+          ],
+          "region": "main",
+          "xpath": "//button[normalize-space()='Remove element']",
+          "stability": "OK",
+          "pages": 1,
+          "seenOn": "https://playwright-playground.com/dynamic/appear-disappear"
+        },
+        {
+          "kind": "button",
+          "words": [
+            "Hide element"
+          ],
+          "region": "main",
+          "xpath": "//button[normalize-space()='Hide element']",
+          "stability": "OK",
+          "pages": 1,
+          "seenOn": "https://playwright-playground.com/dynamic/appear-disappear"
+        },
+        {
+          "kind": "button",
+          "words": [
+            "Reset both"
+          ],
+          "region": "main",
+          "xpath": "//button[normalize-space()='Reset both']",
+          "stability": "OK",
+          "pages": 1,
+          "seenOn": "https://playwright-playground.com/dynamic/appear-disappear"
+        }
+      ],
+      "why": {
+        "rule": "unlike-others",
+        "says": "no other page read is enough like it (the closest, /basic/buttons, shares 82% of its layout and 0% of its headings)"
+      }
+    },
+    {
+      "id": "frames-detail",
+      "name": "FramesDetailPage",
+      "urlPatterns": [
+        "/frames/*"
+      ],
+      "pages": [
+        "https://playwright-playground.com/frames/iframe",
+        "https://playwright-playground.com/frames/embeds"
+      ],
+      "repeated": true,
+      "knownUrls": 2,
+      "titlePattern": null,
+      "sharedHeadings": [],
+      "inMenu": true,
+      "linksTo": [],
+      "controls": [
+        {
+          "kind": "button",
+          "words": [
+            "Open chat"
+          ],
+          "region": "main",
+          "xpath": "//button[normalize-space()='Open chat']",
+          "stability": "OK",
+          "pages": 1,
+          "seenOn": "https://playwright-playground.com/frames/embeds"
+        }
+      ],
+      "why": {
+        "rule": "family-by-address",
+        "says": "its 2 pages read look alike (layout 88% the same, headings 0%) and share the address pattern /frames/*; joined by: a listing: nearly the same layout, in one folder pattern (1 comparison)",
+        "joinedBy": [
+          {
+            "rule": "listing-folder",
+            "pairs": 1
+          }
+        ]
+      }
+    },
+    {
+      "id": "keyboard-actions",
+      "name": "KeyboardActionsPage",
+      "urlPatterns": [
+        "/keyboard/*"
+      ],
+      "pages": [
+        "https://playwright-playground.com/keyboard/actions"
+      ],
+      "repeated": false,
+      "knownUrls": 1,
+      "titlePattern": "Keyboard Actions · QA Playground",
+      "sharedHeadings": [
+        "Keyboard Actions",
+        "Keyboard Input",
+        "Type something"
+      ],
+      "inMenu": true,
+      "linksTo": [],
+      "controls": [
+        {
+          "kind": "text field",
+          "words": [
+            "Type something",
+            "Type here..."
+          ],
+          "region": "main",
+          "xpath": "//input[@id='keyboard-input']",
+          "stability": "Strong",
+          "pages": 1,
+          "seenOn": "https://playwright-playground.com/keyboard/actions"
+        }
+      ],
+      "why": {
+        "rule": "unlike-others",
+        "says": "no other page read is enough like it (the closest, /forms/file-upload, shares 92% of its layout and 0% of its headings)"
+      }
+    },
+    {
+      "id": "network-api",
+      "name": "NetworkApiPage",
+      "urlPatterns": [
+        "/network/*"
+      ],
+      "pages": [
+        "https://playwright-playground.com/network/api"
+      ],
+      "repeated": false,
+      "knownUrls": 1,
+      "titlePattern": "API Playground · QA Playground",
+      "sharedHeadings": [
+        "API Playground",
+        "Users API",
+        "Create User",
+        "First name",
+        "Last name",
+        "Role",
+        "Delayed Response",
+        "HTTP Errors",
+        "Test Data"
+      ],
+      "inMenu": true,
+      "linksTo": [],
+      "controls": [
+        {
+          "kind": "button",
+          "words": [
+            "GET Users"
+          ],
+          "region": "main",
+          "xpath": "//button[normalize-space()='GET Users']",
+          "stability": "OK",
+          "pages": 1,
+          "seenOn": "https://playwright-playground.com/network/api"
+        },
+        {
+          "kind": "button",
+          "words": [
+            "GET User 1"
+          ],
+          "region": "main",
+          "xpath": "//button[normalize-space()='GET User 1']",
+          "stability": "OK",
+          "pages": 1,
+          "seenOn": "https://playwright-playground.com/network/api"
+        },
+        {
+          "kind": "button",
+          "words": [
+            "GET Missing User"
+          ],
+          "region": "main",
+          "xpath": "//button[normalize-space()='GET Missing User']",
+          "stability": "OK",
+          "pages": 1,
+          "seenOn": "https://playwright-playground.com/network/api"
+        },
+        {
+          "kind": "text field",
+          "words": [
+            "First name"
+          ],
+          "region": "main",
+          "form": "Create User",
+          "noValidate": true,
+          "xpath": "//input[@id='api-first-name']",
+          "stability": "Strong",
+          "pages": 1,
+          "seenOn": "https://playwright-playground.com/network/api"
+        },
+        {
+          "kind": "text field",
+          "words": [
+            "Last name"
+          ],
+          "region": "main",
+          "form": "Create User",
+          "noValidate": true,
+          "xpath": "//input[@id='api-last-name']",
+          "stability": "Strong",
+          "pages": 1,
+          "seenOn": "https://playwright-playground.com/network/api"
+        },
+        {
+          "kind": "dropdown",
+          "words": [
+            "Role"
+          ],
+          "region": "main",
+          "form": "Create User",
+          "options": [
+            "Admin",
+            "Manager",
+            "User"
+          ],
+          "noValidate": true,
+          "xpath": "//select[@id='api-role']",
+          "stability": "Strong",
+          "pages": 1,
+          "seenOn": "https://playwright-playground.com/network/api"
+        },
+        {
+          "kind": "button",
+          "words": [
+            "Create user"
+          ],
+          "region": "main",
+          "form": "Create User",
+          "noValidate": true,
+          "xpath": "//button[normalize-space()='Create user']",
+          "stability": "OK",
+          "pages": 1,
+          "seenOn": "https://playwright-playground.com/network/api"
+        },
+        {
+          "kind": "button",
+          "words": [
+            "GET Products — 2s Delay"
+          ],
+          "region": "main",
+          "xpath": "//button[normalize-space()='GET Products — 2s Delay']",
+          "stability": "OK",
+          "pages": 1,
+          "seenOn": "https://playwright-playground.com/network/api"
+        },
+        {
+          "kind": "button",
+          "words": [
+            "HTTP 400"
+          ],
+          "region": "main",
+          "xpath": "//button[normalize-space()='HTTP 400']",
+          "stability": "OK",
+          "pages": 1,
+          "seenOn": "https://playwright-playground.com/network/api"
+        },
+        {
+          "kind": "button",
+          "words": [
+            "HTTP 404"
+          ],
+          "region": "main",
+          "xpath": "//button[normalize-space()='HTTP 404']",
+          "stability": "OK",
+          "pages": 1,
+          "seenOn": "https://playwright-playground.com/network/api"
+        },
+        {
+          "kind": "button",
+          "words": [
+            "HTTP 500"
+          ],
+          "region": "main",
+          "xpath": "//button[normalize-space()='HTTP 500']",
+          "stability": "OK",
+          "pages": 1,
+          "seenOn": "https://playwright-playground.com/network/api"
+        },
+        {
+          "kind": "button",
+          "words": [
+            "Reset API data"
+          ],
+          "region": "main",
+          "xpath": "//button[normalize-space()='Reset API data']",
+          "stability": "OK",
+          "pages": 1,
+          "seenOn": "https://playwright-playground.com/network/api"
+        }
+      ],
+      "why": {
+        "rule": "unlike-others",
+        "says": "no other page read is enough like it (the closest, /tables/basic, shares 57% of its layout and 21% of its headings)"
+      }
+    },
+    {
+      "id": "content-properties",
+      "name": "ContentPropertiesPage",
+      "urlPatterns": [
+        "/content/*"
+      ],
+      "pages": [
+        "https://playwright-playground.com/content/properties"
+      ],
+      "repeated": false,
+      "knownUrls": 1,
+      "titlePattern": "Attributes vs Properties · QA Playground",
+      "sharedHeadings": [
+        "Attributes vs Properties",
+        "Typed value",
+        "Nickname",
+        "Work email",
+        "Checked state",
+        "Send me product updates",
+        "Data attributes",
+        "Wireless Mouse",
+        "Link address"
+      ],
+      "inMenu": true,
+      "linksTo": [],
+      "controls": [
+        {
+          "kind": "text field",
+          "words": [
+            "Nickname"
+          ],
+          "region": "main",
+          "filled": true,
+          "xpath": "//input[@id='nickname']",
+          "stability": "Strong",
+          "pages": 1,
+          "seenOn": "https://playwright-playground.com/content/properties"
+        },
+        {
+          "kind": "email field",
+          "words": [
+            "Work email"
+          ],
+          "region": "main",
+          "required": true,
+          "xpath": "//input[@id='work-email']",
+          "stability": "Strong",
+          "pages": 1,
+          "seenOn": "https://playwright-playground.com/content/properties"
+        },
+        {
+          "kind": "checkbox",
+          "words": [
+            "Send me product updates"
+          ],
+          "region": "main",
+          "xpath": "//input[ancestor::label[normalize-space()='Send me product updates']]",
+          "stability": "Strong",
+          "pages": 1,
+          "seenOn": "https://playwright-playground.com/content/properties"
+        },
+        {
+          "kind": "button",
+          "words": [
+            "Buy one"
+          ],
+          "region": "main",
+          "xpath": "//button[normalize-space()='Buy one']",
+          "stability": "OK",
+          "pages": 1,
+          "seenOn": "https://playwright-playground.com/content/properties"
+        },
+        {
+          "kind": "button",
+          "words": [
+            "Restock"
+          ],
+          "region": "main",
+          "xpath": "//button[normalize-space()='Restock']",
+          "stability": "OK",
+          "pages": 1,
+          "seenOn": "https://playwright-playground.com/content/properties"
+        }
+      ],
+      "why": {
+        "rule": "unlike-others",
+        "says": "no other page read is enough like it (the closest, /content/attributes, shares 70% of its layout and 0% of its headings)"
+      }
+    },
+    {
+      "id": "basic-inputs",
+      "name": "BasicInputsPage",
+      "urlPatterns": [
+        "/basic/*"
+      ],
+      "pages": [
+        "https://playwright-playground.com/basic/inputs"
+      ],
+      "repeated": false,
+      "knownUrls": 1,
+      "titlePattern": "Inputs · QA Playground",
+      "sharedHeadings": [
+        "Inputs",
+        "Text input",
+        "Username",
+        "Other inputs",
+        "Email",
+        "Password",
+        "Number",
+        "Date",
+        "Range (Value: 50)"
+      ],
+      "inMenu": true,
+      "linksTo": [],
+      "controls": [
+        {
+          "kind": "text field",
+          "words": [
+            "Username",
+            "Enter username"
+          ],
+          "region": "main",
+          "xpath": "//input[@data-testid='username-input']",
+          "stability": "Strong",
+          "pages": 1,
+          "seenOn": "https://playwright-playground.com/basic/inputs"
+        },
+        {
+          "kind": "email field",
+          "words": [
+            "Email",
+            "email@example.com"
+          ],
+          "region": "main",
+          "xpath": "//input[@data-testid='email-input']",
+          "stability": "Strong",
+          "pages": 1,
+          "seenOn": "https://playwright-playground.com/basic/inputs"
+        },
+        {
+          "kind": "password field",
+          "words": [
+            "Password",
+            "Enter password"
+          ],
+          "region": "main",
+          "xpath": "//input[@data-testid='password-input']",
+          "stability": "Strong",
+          "pages": 1,
+          "seenOn": "https://playwright-playground.com/basic/inputs"
+        },
+        {
+          "kind": "number field",
+          "words": [
+            "Number"
+          ],
+          "region": "main",
+          "xpath": "//input[@data-testid='number-input']",
+          "stability": "Strong",
+          "pages": 1,
+          "seenOn": "https://playwright-playground.com/basic/inputs"
+        },
+        {
+          "kind": "date field",
+          "words": [
+            "Date"
+          ],
+          "region": "main",
+          "xpath": "//input[@data-testid='date-input']",
+          "stability": "Strong",
+          "pages": 1,
+          "seenOn": "https://playwright-playground.com/basic/inputs"
+        },
+        {
+          "kind": "range field",
+          "words": [
+            "Range (Value: 50)",
+            "range"
+          ],
+          "region": "main",
+          "xpath": "//input[@data-testid='range-input']",
+          "stability": "Strong",
+          "pages": 1,
+          "seenOn": "https://playwright-playground.com/basic/inputs"
+        }
+      ],
+      "why": {
+        "rule": "unlike-others",
+        "says": "no other page read is enough like it (the closest, /tables/actions, shares 58% of its layout and 14% of its headings)"
+      }
+    },
+    {
+      "id": "site-detail",
+      "name": "SiteDetailPage",
+      "urlPatterns": [
+        "/*/*"
+      ],
+      "pages": [
+        "https://playwright-playground.com/dynamic/changing-text",
+        "https://playwright-playground.com/dynamic/progress-bar",
+        "https://playwright-playground.com/content/shadow-dom",
+        "https://playwright-playground.com/dynamic/flaky-lab"
+      ],
+      "repeated": true,
+      "knownUrls": 4,
+      "titlePattern": "{name} · QA Playground",
+      "sharedHeadings": [],
+      "inMenu": true,
+      "linksTo": [],
+      "controls": [
+        {
+          "kind": "button",
+          "words": [
+            "Run job"
+          ],
+          "region": "main",
+          "xpath": "//button[normalize-space()='Run job']",
+          "stability": "OK",
+          "pages": 1,
+          "seenOn": "https://playwright-playground.com/dynamic/changing-text"
+        },
+        {
+          "kind": "button",
+          "words": [
+            "Place order"
+          ],
+          "region": "main",
+          "xpath": "//button[normalize-space()='Place order']",
+          "stability": "OK",
+          "pages": 1,
+          "seenOn": "https://playwright-playground.com/dynamic/changing-text"
+        },
+        {
+          "kind": "button",
+          "words": [
+            "Start progress"
+          ],
+          "region": "main",
+          "xpath": "//button[normalize-space()='Start progress']",
+          "stability": "OK",
+          "pages": 1,
+          "seenOn": "https://playwright-playground.com/dynamic/progress-bar"
+        },
+        {
+          "kind": "button",
+          "words": [
+            "Stop"
+          ],
+          "region": "main",
+          "disabled": true,
+          "xpath": "//button[normalize-space()='Stop']",
+          "stability": "OK",
+          "pages": 1,
+          "seenOn": "https://playwright-playground.com/dynamic/progress-bar"
+        },
+        {
+          "kind": "button",
+          "words": [
+            "Fetch report"
+          ],
+          "region": "main",
+          "xpath": "//button[normalize-space()='Fetch report']",
+          "stability": "OK",
+          "pages": 1,
+          "seenOn": "https://playwright-playground.com/dynamic/flaky-lab"
+        },
+        {
+          "kind": "button",
+          "words": [
+            "Select"
+          ],
+          "region": "main",
+          "xpath": "//ul[@aria-label='Services']//li[span[normalize-space()='Beta']]//button[normalize-space()='Select']",
+          "stability": "OK",
+          "pages": 1,
+          "seenOn": "https://playwright-playground.com/dynamic/flaky-lab"
+        },
+        {
+          "kind": "button",
+          "words": [
+            "Select"
+          ],
+          "region": "main",
+          "xpath": "//ul[@aria-label='Services']//li[span[normalize-space()='Alpha']]//button[normalize-space()='Select']",
+          "stability": "OK",
+          "pages": 1,
+          "seenOn": "https://playwright-playground.com/dynamic/flaky-lab"
+        },
+        {
+          "kind": "button",
+          "words": [
+            "Select"
+          ],
+          "region": "main",
+          "xpath": "//ul[@aria-label='Services']//li[span[normalize-space()='Gamma']]//button[normalize-space()='Select']",
+          "stability": "OK",
+          "pages": 1,
+          "seenOn": "https://playwright-playground.com/dynamic/flaky-lab"
+        },
+        {
+          "kind": "button",
+          "words": [
+            "Quick save"
+          ],
+          "region": "main",
+          "xpath": "//button[normalize-space()='Quick save']",
+          "stability": "OK",
+          "pages": 1,
+          "seenOn": "https://playwright-playground.com/dynamic/flaky-lab"
+        }
+      ],
+      "why": {
+        "rule": "family-by-address",
+        "says": "its 4 pages read look alike (layout 75% the same, headings 21%) and share the address pattern /*/*; joined by: the layouts agree, with some headings shared (5 comparisons); 1 comparison held by no rule",
+        "joinedBy": [
+          {
+            "rule": "layout-and-some-headings",
+            "pairs": 5
+          }
+        ],
+        "apart": 1
+      }
+    },
+    {
+      "id": "forms-autocomplete",
+      "name": "FormsAutocompletePage",
+      "urlPatterns": [
+        "/forms/*"
+      ],
+      "pages": [
+        "https://playwright-playground.com/forms/autocomplete"
+      ],
+      "repeated": false,
+      "knownUrls": 1,
+      "titlePattern": "Autocomplete · QA Playground",
+      "sharedHeadings": [
+        "Autocomplete",
+        "Country Search",
+        "Country"
+      ],
+      "inMenu": true,
+      "linksTo": [],
+      "controls": [
+        {
+          "kind": "text field",
+          "words": [
+            "Country",
+            "Start typing..."
+          ],
+          "region": "main",
+          "xpath": "//input[@id='country-search']",
+          "stability": "Strong",
+          "pages": 1,
+          "seenOn": "https://playwright-playground.com/forms/autocomplete"
+        }
+      ],
+      "why": {
+        "rule": "unlike-others",
+        "says": "no other page read is enough like it (the closest, /dialogs/new-tab, shares 86% of its layout and 0% of its headings)"
+      }
+    },
+    {
+      "id": "dialogs-modal",
+      "name": "DialogsModalPage",
+      "urlPatterns": [
+        "/dialogs/*"
+      ],
+      "pages": [
+        "https://playwright-playground.com/dialogs/modal"
+      ],
+      "repeated": false,
+      "knownUrls": 1,
+      "titlePattern": "Modal · QA Playground",
+      "sharedHeadings": [
+        "Modal Dialogs",
+        "Modal Controls"
+      ],
+      "inMenu": true,
+      "linksTo": [],
+      "controls": [
+        {
+          "kind": "button",
+          "words": [
+            "Open Standard Modal"
+          ],
+          "region": "main",
+          "xpath": "//button[@data-testid='open-modal-button']",
+          "stability": "Strong",
+          "pages": 1,
+          "seenOn": "https://playwright-playground.com/dialogs/modal"
+        },
+        {
+          "kind": "button",
+          "words": [
+            "Open Async Modal"
+          ],
+          "region": "main",
+          "xpath": "//button[@data-testid='open-async-modal-button']",
+          "stability": "Strong",
+          "pages": 1,
+          "seenOn": "https://playwright-playground.com/dialogs/modal"
+        },
+        {
+          "kind": "button",
+          "words": [
+            "Open Advanced Modal"
+          ],
+          "region": "main",
+          "xpath": "//button[normalize-space()='Open Advanced Modal']",
+          "stability": "OK",
+          "pages": 1,
+          "seenOn": "https://playwright-playground.com/dialogs/modal"
+        }
+      ],
+      "why": {
+        "rule": "unlike-others",
+        "says": "no other page read is enough like it (the closest, /dialogs/javascript, shares 68% of its layout and 33% of its headings)"
+      }
+    },
+    {
+      "id": "content-aria-widgets",
+      "name": "ContentAriaWidgetsPage",
+      "urlPatterns": [
+        "/content/*"
+      ],
+      "pages": [
+        "https://playwright-playground.com/content/aria-widgets"
+      ],
+      "repeated": false,
+      "knownUrls": 1,
+      "titlePattern": "ARIA Widgets · QA Playground",
+      "sharedHeadings": [
+        "ARIA Widgets",
+        "Tabs",
+        "Accordion",
+        "Toggle buttons"
+      ],
+      "inMenu": true,
+      "linksTo": [],
+      "controls": [
+        {
+          "kind": "tab",
+          "words": [
+            "Profile"
+          ],
+          "region": "main",
+          "xpath": "//button[@id='tab-profile']",
+          "stability": "Strong",
+          "pages": 1,
+          "seenOn": "https://playwright-playground.com/content/aria-widgets"
+        },
+        {
+          "kind": "tab",
+          "words": [
+            "Security"
+          ],
+          "region": "main",
+          "xpath": "//button[@id='tab-security']",
+          "stability": "Strong",
+          "pages": 1,
+          "seenOn": "https://playwright-playground.com/content/aria-widgets"
+        },
+        {
+          "kind": "tab",
+          "words": [
+            "Billing"
+          ],
+          "region": "main",
+          "xpath": "//button[@id='tab-billing']",
+          "stability": "Strong",
+          "pages": 1,
+          "seenOn": "https://playwright-playground.com/content/aria-widgets"
+        },
+        {
+          "kind": "button",
+          "words": [
+            "Can I run tests in parallel? +"
+          ],
+          "region": "main",
+          "xpath": "//button[@id='faq-trigger-0']",
+          "stability": "Strong",
+          "pages": 1,
+          "seenOn": "https://playwright-playground.com/content/aria-widgets"
+        },
+        {
+          "kind": "button",
+          "words": [
+            "Which browsers are supported? +"
+          ],
+          "region": "main",
+          "xpath": "//button[@id='faq-trigger-1']",
+          "stability": "Strong",
+          "pages": 1,
+          "seenOn": "https://playwright-playground.com/content/aria-widgets"
+        },
+        {
+          "kind": "button",
+          "words": [
+            "Do I need a test id on every element? +"
+          ],
+          "region": "main",
+          "xpath": "//button[@id='faq-trigger-2']",
+          "stability": "Strong",
+          "pages": 1,
+          "seenOn": "https://playwright-playground.com/content/aria-widgets"
+        },
+        {
+          "kind": "button",
+          "words": [
+            "Bold"
+          ],
+          "region": "main",
+          "xpath": "//button[normalize-space()='Bold']",
+          "stability": "OK",
+          "pages": 1,
+          "seenOn": "https://playwright-playground.com/content/aria-widgets"
+        },
+        {
+          "kind": "button",
+          "words": [
+            "Italic"
+          ],
+          "region": "main",
+          "xpath": "//button[normalize-space()='Italic']",
+          "stability": "OK",
+          "pages": 1,
+          "seenOn": "https://playwright-playground.com/content/aria-widgets"
+        },
+        {
+          "kind": "button",
+          "words": [
+            "Underline"
+          ],
+          "region": "main",
+          "xpath": "//button[normalize-space()='Underline']",
+          "stability": "OK",
+          "pages": 1,
+          "seenOn": "https://playwright-playground.com/content/aria-widgets"
+        }
+      ],
+      "why": {
+        "rule": "unlike-others",
+        "says": "no other page read is enough like it (the closest, /dialogs/new-tab, shares 60% of its layout and 20% of its headings)"
+      }
+    },
+    {
+      "id": "basic-checkboxes",
+      "name": "BasicCheckboxesPage",
+      "urlPatterns": [
+        "/basic/*"
+      ],
+      "pages": [
+        "https://playwright-playground.com/basic/checkboxes"
+      ],
+      "repeated": false,
+      "knownUrls": 1,
+      "titlePattern": "Checkboxes · QA Playground",
+      "sharedHeadings": [
+        "Checkboxes",
+        "Checkbox examples",
+        "Subscribe to newsletter",
+        "Accept terms and conditions",
+        "Current state"
+      ],
+      "inMenu": true,
+      "linksTo": [],
+      "controls": [
+        {
+          "kind": "checkbox",
+          "words": [
+            "Subscribe to newsletter"
+          ],
+          "region": "main",
+          "xpath": "//input[ancestor::label[normalize-space()='Subscribe to newsletter']]",
+          "stability": "Strong",
+          "pages": 1,
+          "seenOn": "https://playwright-playground.com/basic/checkboxes"
+        },
+        {
+          "kind": "checkbox",
+          "words": [
+            "Accept terms and conditions"
+          ],
+          "region": "main",
+          "xpath": "//input[ancestor::label[normalize-space()='Accept terms and conditions']]",
+          "stability": "Strong",
+          "pages": 1,
+          "seenOn": "https://playwright-playground.com/basic/checkboxes"
+        }
+      ],
+      "why": {
+        "rule": "unlike-others",
+        "says": "no other page read is enough like it (the closest, /basic/buttons, shares 84% of its layout and 14% of its headings)"
+      }
+    },
+    {
+      "id": "frames-nested",
+      "name": "FramesNestedPage",
+      "urlPatterns": [
+        "/frames/*"
+      ],
+      "pages": [
+        "https://playwright-playground.com/frames/nested"
+      ],
+      "repeated": false,
+      "knownUrls": 1,
+      "titlePattern": "Nested & Multiple Frames · QA Playground",
+      "sharedHeadings": [
+        "Nested & Multiple Frames",
+        "Nested frame",
+        "Choose a plan",
+        "Basic plan",
+        "Pro plan",
+        "Terms"
+      ],
+      "inMenu": true,
+      "linksTo": [],
+      "why": {
+        "rule": "unlike-others",
+        "says": "no other page read is enough like it (the closest, /frames/iframe, shares 82% of its layout and 0% of its headings)"
+      }
+    },
+    {
+      "id": "keyboard-drag-and-drop",
+      "name": "KeyboardDragAndDropPage",
+      "urlPatterns": [
+        "/keyboard/*"
+      ],
+      "pages": [
+        "https://playwright-playground.com/keyboard/drag-and-drop"
+      ],
+      "repeated": false,
+      "knownUrls": 1,
+      "titlePattern": "Drag & Drop · QA Playground",
+      "sharedHeadings": [
+        "Drag & Drop",
+        "Drag the Element"
+      ],
+      "inMenu": true,
+      "linksTo": [],
+      "why": {
+        "rule": "unlike-others",
+        "says": "no other page read is enough like it (the closest, /dialogs/new-tab, shares 86% of its layout and 0% of its headings)"
+      }
+    },
+    {
+      "id": "network-api-testing",
+      "name": "NetworkApiTestingPage",
+      "urlPatterns": [
+        "/network/*"
+      ],
+      "pages": [
+        "https://playwright-playground.com/network/api-testing"
+      ],
+      "repeated": false,
+      "knownUrls": 1,
+      "titlePattern": "API Testing · QA Playground",
+      "sharedHeadings": [
+        "API Testing",
+        "API Reference",
+        "Practice API endpoints",
+        "Endpoint",
+        "Request body",
+        "Responses",
+        "Notes",
+        "Users",
+        "Authentication",
+        "Other",
+        "Data Models"
+      ],
+      "inMenu": true,
+      "linksTo": [],
+      "why": {
+        "rule": "unlike-others",
+        "says": "no other page read is enough like it (the closest, /frames/iframe, shares 71% of its layout and 0% of its headings)"
+      }
+    },
+    {
+      "id": "site-detail-page2",
+      "name": "SiteDetailPage2",
+      "urlPatterns": [
+        "/*/*"
+      ],
+      "pages": [
+        "https://playwright-playground.com/forms/file-upload",
+        "https://playwright-playground.com/forms/file-download",
+        "https://playwright-playground.com/keyboard/mouse-actions"
+      ],
+      "repeated": true,
+      "knownUrls": 3,
+      "titlePattern": "{name} · QA Playground",
+      "sharedHeadings": [],
+      "inMenu": true,
+      "linksTo": [],
+      "controls": [
+        {
+          "kind": "file field",
+          "words": [
+            "Choose file",
+            "file"
+          ],
+          "region": "main",
+          "xpath": "//input[@id='file-upload']",
+          "stability": "Strong",
+          "pages": 1,
+          "seenOn": "https://playwright-playground.com/forms/file-upload"
+        },
+        {
+          "kind": "button",
+          "words": [
+            "Export users as CSV"
+          ],
+          "region": "main",
+          "xpath": "//button[normalize-space()='Export users as CSV']",
+          "stability": "OK",
+          "pages": 1,
+          "seenOn": "https://playwright-playground.com/forms/file-download"
+        },
+        {
+          "kind": "button",
+          "words": [
+            "Click"
+          ],
+          "region": "main",
+          "xpath": "//button[normalize-space()='Click']",
+          "stability": "OK",
+          "pages": 1,
+          "seenOn": "https://playwright-playground.com/keyboard/mouse-actions"
+        },
+        {
+          "kind": "button",
+          "words": [
+            "Double Click"
+          ],
+          "region": "main",
+          "xpath": "//button[normalize-space()='Double Click']",
+          "stability": "OK",
+          "pages": 1,
+          "seenOn": "https://playwright-playground.com/keyboard/mouse-actions"
+        },
+        {
+          "kind": "button",
+          "words": [
+            "Right Click"
+          ],
+          "region": "main",
+          "xpath": "//button[normalize-space()='Right Click']",
+          "stability": "OK",
+          "pages": 1,
+          "seenOn": "https://playwright-playground.com/keyboard/mouse-actions"
+        }
+      ],
+      "why": {
+        "rule": "family-by-address",
+        "says": "its 3 pages read look alike (layout 78% the same, headings 23%) and share the address pattern /*/*; joined by: the layouts agree, with some headings shared (3 comparisons)",
+        "joinedBy": [
+          {
+            "rule": "layout-and-some-headings",
+            "pairs": 3
+          }
+        ]
+      }
+    },
+    {
+      "id": "tables-actions",
+      "name": "TablesActionsPage",
+      "urlPatterns": [
+        "/tables/*"
+      ],
+      "pages": [
+        "https://playwright-playground.com/tables/actions"
+      ],
+      "repeated": false,
+      "knownUrls": 1,
+      "titlePattern": "Table Actions · QA Playground",
+      "sharedHeadings": [
+        "Table Actions",
+        "User Management",
+        "User management table",
+        "First Name",
+        "Last Name",
+        "Email",
+        "Actions"
+      ],
+      "inMenu": true,
+      "linksTo": [],
+      "controls": [
+        {
+          "kind": "button",
+          "words": [
+            "Edit"
+          ],
+          "region": "main",
+          "xpath": "//div[@id='root']//tr[td[normalize-space()='John']]//button[normalize-space()='Edit']",
+          "stability": "OK",
+          "pages": 1,
+          "seenOn": "https://playwright-playground.com/tables/actions"
+        },
+        {
+          "kind": "button",
+          "words": [
+            "Delete"
+          ],
+          "region": "main",
+          "xpath": "//div[@id='root']//tr[td[normalize-space()='John']]//button[normalize-space()='Delete']",
+          "stability": "OK",
+          "pages": 1,
+          "seenOn": "https://playwright-playground.com/tables/actions"
+        },
+        {
+          "kind": "button",
+          "words": [
+            "Edit"
+          ],
+          "region": "main",
+          "xpath": "//div[@id='root']//tr[td[normalize-space()='Anna']]//button[normalize-space()='Edit']",
+          "stability": "OK",
+          "pages": 1,
+          "seenOn": "https://playwright-playground.com/tables/actions"
+        },
+        {
+          "kind": "button",
+          "words": [
+            "Delete"
+          ],
+          "region": "main",
+          "xpath": "//div[@id='root']//tr[td[normalize-space()='Anna']]//button[normalize-space()='Delete']",
+          "stability": "OK",
+          "pages": 1,
+          "seenOn": "https://playwright-playground.com/tables/actions"
+        },
+        {
+          "kind": "button",
+          "words": [
+            "Edit"
+          ],
+          "region": "main",
+          "xpath": "//div[@id='root']//tr[td[normalize-space()='Michael']]//button[normalize-space()='Edit']",
+          "stability": "OK",
+          "pages": 1,
+          "seenOn": "https://playwright-playground.com/tables/actions"
+        },
+        {
+          "kind": "button",
+          "words": [
+            "Delete"
+          ],
+          "region": "main",
+          "xpath": "//div[@id='root']//tr[td[normalize-space()='Michael']]//button[normalize-space()='Delete']",
+          "stability": "OK",
+          "pages": 1,
+          "seenOn": "https://playwright-playground.com/tables/actions"
+        },
+        {
+          "kind": "button",
+          "words": [
+            "Edit"
+          ],
+          "region": "main",
+          "xpath": "//div[@id='root']//tr[td[normalize-space()='Sarah']]//button[normalize-space()='Edit']",
+          "stability": "OK",
+          "pages": 1,
+          "seenOn": "https://playwright-playground.com/tables/actions"
+        },
+        {
+          "kind": "button",
+          "words": [
+            "Delete"
+          ],
+          "region": "main",
+          "xpath": "//div[@id='root']//tr[td[normalize-space()='Sarah']]//button[normalize-space()='Delete']",
+          "stability": "OK",
+          "pages": 1,
+          "seenOn": "https://playwright-playground.com/tables/actions"
+        },
+        {
+          "kind": "button",
+          "words": [
+            "Add user"
+          ],
+          "region": "main",
+          "xpath": "//button[normalize-space()='Add user']",
+          "stability": "OK",
+          "pages": 1,
+          "seenOn": "https://playwright-playground.com/tables/actions"
+        }
+      ],
+      "why": {
+        "rule": "unlike-others",
+        "says": "no other page read is enough like it (the closest, /tables/basic, shares 56% of its layout and 25% of its headings)"
+      }
+    },
+    {
+      "id": "basic-radio-buttons",
+      "name": "BasicRadioButtonsPage",
+      "urlPatterns": [
+        "/basic/*"
+      ],
+      "pages": [
+        "https://playwright-playground.com/basic/radio-buttons"
+      ],
+      "repeated": false,
+      "knownUrls": 1,
+      "titlePattern": "Radio Buttons · QA Playground",
+      "sharedHeadings": [
+        "Radio Buttons",
+        "Select your browser",
+        "Chrome",
+        "Firefox",
+        "Safari",
+        "Internet Explorer"
+      ],
+      "inMenu": true,
+      "linksTo": [],
+      "controls": [
+        {
+          "kind": "radio",
+          "words": [
+            "Chrome",
+            "browser"
+          ],
+          "region": "main",
+          "xpath": "//input[ancestor::label[normalize-space()='Chrome']]",
+          "stability": "Strong",
+          "pages": 1,
+          "seenOn": "https://playwright-playground.com/basic/radio-buttons"
+        },
+        {
+          "kind": "radio",
+          "words": [
+            "Firefox",
+            "browser"
+          ],
+          "region": "main",
+          "xpath": "//input[ancestor::label[normalize-space()='Firefox']]",
+          "stability": "Strong",
+          "pages": 1,
+          "seenOn": "https://playwright-playground.com/basic/radio-buttons"
+        },
+        {
+          "kind": "radio",
+          "words": [
+            "Safari",
+            "browser"
+          ],
+          "region": "main",
+          "xpath": "//input[ancestor::label[normalize-space()='Safari']]",
+          "stability": "Strong",
+          "pages": 1,
+          "seenOn": "https://playwright-playground.com/basic/radio-buttons"
+        },
+        {
+          "kind": "radio",
+          "words": [
+            "Internet Explorer",
+            "browser"
+          ],
+          "region": "main",
+          "disabled": true,
+          "xpath": "//input[ancestor::label[normalize-space()='Internet Explorer']]",
+          "stability": "Strong",
+          "pages": 1,
+          "seenOn": "https://playwright-playground.com/basic/radio-buttons"
+        }
+      ],
+      "why": {
+        "rule": "unlike-others",
+        "says": "no other page read is enough like it (the closest, /content/shadow-dom, shares 78% of its layout and 13% of its headings)"
+      }
+    },
+    {
+      "id": "dynamic-actionability",
+      "name": "DynamicActionabilityPage",
+      "urlPatterns": [
+        "/dynamic/*"
+      ],
+      "pages": [
+        "https://playwright-playground.com/dynamic/actionability"
+      ],
+      "repeated": false,
+      "knownUrls": 1,
+      "titlePattern": "Actionability · QA Playground",
+      "sharedHeadings": [
+        "Actionability",
+        "Enabled after a delay",
+        "Covered by an overlay",
+        "Moving into place",
+        "Out of view"
+      ],
+      "inMenu": true,
+      "linksTo": [],
+      "controls": [
+        {
+          "kind": "button",
+          "words": [
+            "Prepare order"
+          ],
+          "region": "main",
+          "xpath": "//button[normalize-space()='Prepare order']",
+          "stability": "OK",
+          "pages": 1,
+          "seenOn": "https://playwright-playground.com/dynamic/actionability"
+        },
+        {
+          "kind": "button",
+          "words": [
+            "Submit order"
+          ],
+          "region": "main",
+          "disabled": true,
+          "xpath": "//button[normalize-space()='Submit order']",
+          "stability": "OK",
+          "pages": 1,
+          "seenOn": "https://playwright-playground.com/dynamic/actionability"
+        },
+        {
+          "kind": "button",
+          "words": [
+            "Refresh data"
+          ],
+          "region": "main",
+          "xpath": "//button[normalize-space()='Refresh data']",
+          "stability": "OK",
+          "pages": 1,
+          "seenOn": "https://playwright-playground.com/dynamic/actionability"
+        },
+        {
+          "kind": "button",
+          "words": [
+            "Export"
+          ],
+          "region": "main",
+          "xpath": "//button[normalize-space()='Export']",
+          "stability": "OK",
+          "pages": 1,
+          "seenOn": "https://playwright-playground.com/dynamic/actionability"
+        },
+        {
+          "kind": "button",
+          "words": [
+            "Show offer"
+          ],
+          "region": "main",
+          "xpath": "//button[normalize-space()='Show offer']",
+          "stability": "OK",
+          "pages": 1,
+          "seenOn": "https://playwright-playground.com/dynamic/actionability"
+        },
+        {
+          "kind": "button",
+          "words": [
+            "Accept terms"
+          ],
+          "region": "main",
+          "xpath": "//button[normalize-space()='Accept terms']",
+          "stability": "OK",
+          "pages": 1,
+          "seenOn": "https://playwright-playground.com/dynamic/actionability"
+        }
+      ],
+      "why": {
+        "rule": "unlike-others",
+        "says": "no other page read is enough like it (the closest, /basic/buttons, shares 80% of its layout and 14% of its headings)"
+      }
+    },
+    {
+      "id": "basic-dropdown",
+      "name": "BasicDropdownPage",
+      "urlPatterns": [
+        "/basic/*"
+      ],
+      "pages": [
+        "https://playwright-playground.com/basic/dropdown"
+      ],
+      "repeated": false,
+      "knownUrls": 1,
+      "titlePattern": "Dropdown · QA Playground",
+      "sharedHeadings": [
+        "Dropdown",
+        "Country",
+        "Select a country",
+        "Languages",
+        "Languages you speak",
+        "Shirt size"
+      ],
+      "inMenu": true,
+      "linksTo": [],
+      "controls": [
+        {
+          "kind": "dropdown",
+          "words": [
+            "Select a country"
+          ],
+          "region": "main",
+          "options": [
+            "Select country",
+            "Poland",
+            "Germany",
+            "United Kingdom",
+            "United States"
+          ],
+          "xpath": "//select[@id='country']",
+          "stability": "Strong",
+          "pages": 1,
+          "seenOn": "https://playwright-playground.com/basic/dropdown"
+        },
+        {
+          "kind": "dropdown",
+          "words": [
+            "Languages you speak"
+          ],
+          "region": "main",
+          "options": [
+            "English",
+            "Polish",
+            "German",
+            "Spanish"
+          ],
+          "xpath": "//select[@id='languages']",
+          "stability": "Strong",
+          "pages": 1,
+          "seenOn": "https://playwright-playground.com/basic/dropdown"
+        },
+        {
+          "kind": "button",
+          "words": [
+            "Shirt size Choose a size▾",
+            "Choose a size ▾"
+          ],
+          "region": "main",
+          "xpath": "//button[@id='shirt-size-button']",
+          "stability": "Strong",
+          "pages": 1,
+          "seenOn": "https://playwright-playground.com/basic/dropdown"
+        }
+      ],
+      "why": {
+        "rule": "unlike-others",
+        "says": "no other page read is enough like it (the closest, /basic/buttons, shares 75% of its layout and 13% of its headings)"
+      }
+    },
+    {
+      "id": "content-page-audit",
+      "name": "ContentPageAuditPage",
+      "urlPatterns": [
+        "/content/*"
+      ],
+      "pages": [
+        "https://playwright-playground.com/content/page-audit"
+      ],
+      "repeated": false,
+      "knownUrls": 1,
+      "titlePattern": "Page Audit · QA Playground",
+      "sharedHeadings": [
+        "Page Audit",
+        "Images",
+        "Links",
+        "Release notes",
+        "Version 2.0",
+        "New features",
+        "Version 1.9",
+        "Bug fixes"
+      ],
+      "inMenu": true,
+      "linksTo": [],
+      "why": {
+        "rule": "unlike-others",
+        "says": "no other page read is enough like it (the closest, /dialogs/new-tab, shares 63% of its layout and 11% of its headings)"
+      }
+    },
+    {
+      "id": "tables-data-grid",
+      "name": "TablesDataGridPage",
+      "urlPatterns": [
+        "/tables/*"
+      ],
+      "pages": [
+        "https://playwright-playground.com/tables/data-grid"
+      ],
+      "repeated": false,
+      "knownUrls": 1,
+      "titlePattern": "Data Grid · QA Playground",
+      "sharedHeadings": [
+        "Data Grid",
+        "Search employees",
+        "Employees · 30 employees found",
+        "Name",
+        "Department",
+        "City"
+      ],
+      "inMenu": true,
+      "linksTo": [],
+      "controls": [
+        {
+          "kind": "search field",
+          "words": [
+            "Search employees",
+            "Name, department or city"
+          ],
+          "region": "main",
+          "xpath": "//input[@id='employee-search']",
+          "stability": "Strong",
+          "pages": 1,
+          "seenOn": "https://playwright-playground.com/tables/data-grid"
+        },
+        {
+          "kind": "button",
+          "words": [
+            "Clear selection"
+          ],
+          "region": "main",
+          "disabled": true,
+          "xpath": "//button[normalize-space()='Clear selection']",
+          "stability": "OK",
+          "pages": 1,
+          "seenOn": "https://playwright-playground.com/tables/data-grid"
+        },
+        {
+          "kind": "checkbox",
+          "words": [
+            "Select all on this page"
+          ],
+          "region": "main",
+          "xpath": "//input[@aria-label='Select all on this page']",
+          "stability": "Strong",
+          "pages": 1,
+          "seenOn": "https://playwright-playground.com/tables/data-grid"
+        },
+        {
+          "kind": "checkbox",
+          "words": [
+            "Select Olivia Martin"
+          ],
+          "region": "main",
+          "xpath": "//input[@aria-label='Select Olivia Martin']",
+          "stability": "Strong",
+          "pages": 1,
+          "seenOn": "https://playwright-playground.com/tables/data-grid"
+        },
+        {
+          "kind": "checkbox",
+          "words": [
+            "Select Liam Nowak"
+          ],
+          "region": "main",
+          "xpath": "//input[@aria-label='Select Liam Nowak']",
+          "stability": "Strong",
+          "pages": 1,
+          "seenOn": "https://playwright-playground.com/tables/data-grid"
+        },
+        {
+          "kind": "checkbox",
+          "words": [
+            "Select Emma Fischer"
+          ],
+          "region": "main",
+          "xpath": "//input[@aria-label='Select Emma Fischer']",
+          "stability": "Strong",
+          "pages": 1,
+          "seenOn": "https://playwright-playground.com/tables/data-grid"
+        },
+        {
+          "kind": "checkbox",
+          "words": [
+            "Select Noah Kowalczyk"
+          ],
+          "region": "main",
+          "xpath": "//input[@aria-label='Select Noah Kowalczyk']",
+          "stability": "Strong",
+          "pages": 1,
+          "seenOn": "https://playwright-playground.com/tables/data-grid"
+        },
+        {
+          "kind": "checkbox",
+          "words": [
+            "Select Ava Schmidt"
+          ],
+          "region": "main",
+          "xpath": "//input[@aria-label='Select Ava Schmidt']",
+          "stability": "Strong",
+          "pages": 1,
+          "seenOn": "https://playwright-playground.com/tables/data-grid"
+        },
+        {
+          "kind": "button",
+          "words": [
+            "Previous page",
+            "← Previous"
+          ],
+          "region": "main",
+          "disabled": true,
+          "xpath": "//button[@aria-label='Previous page']",
+          "stability": "Strong",
+          "pages": 1,
+          "seenOn": "https://playwright-playground.com/tables/data-grid"
+        },
+        {
+          "kind": "button",
+          "words": [
+            "Next page",
+            "Next →"
+          ],
+          "region": "main",
+          "xpath": "//button[@aria-label='Next page']",
+          "stability": "Strong",
+          "pages": 1,
+          "seenOn": "https://playwright-playground.com/tables/data-grid"
+        }
+      ],
+      "why": {
+        "rule": "unlike-others",
+        "says": "no other page read is enough like it (the closest, /dialogs/new-tab, shares 46% of its layout and 14% of its headings)"
+      }
+    },
+    {
+      "id": "network-mocking",
+      "name": "NetworkMockingPage",
+      "urlPatterns": [
+        "/network/*"
+      ],
+      "pages": [
+        "https://playwright-playground.com/network/mocking"
+      ],
+      "repeated": false,
+      "knownUrls": 1,
+      "titlePattern": "Network Mocking · QA Playground",
+      "sharedHeadings": [
+        "Network Mocking",
+        "Products API",
+        "Product Search",
+        "Search products",
+        "Notifications"
+      ],
+      "inMenu": true,
+      "linksTo": [],
+      "controls": [
+        {
+          "kind": "button",
+          "words": [
+            "Load Products"
+          ],
+          "region": "main",
+          "xpath": "//button[normalize-space()='Load Products']",
+          "stability": "OK",
+          "pages": 1,
+          "seenOn": "https://playwright-playground.com/network/mocking"
+        },
+        {
+          "kind": "search field",
+          "words": [
+            "Search products"
+          ],
+          "region": "main",
+          "form": "search",
+          "xpath": "//input[@id='product-search']",
+          "stability": "Strong",
+          "pages": 1,
+          "seenOn": "https://playwright-playground.com/network/mocking"
+        },
+        {
+          "kind": "button",
+          "words": [
+            "Search"
+          ],
+          "region": "main",
+          "form": "search",
+          "xpath": "//button[normalize-space()='Search']",
+          "stability": "OK",
+          "pages": 1,
+          "seenOn": "https://playwright-playground.com/network/mocking"
+        },
+        {
+          "kind": "button",
+          "words": [
+            "Load notifications"
+          ],
+          "region": "main",
+          "xpath": "//button[normalize-space()='Load notifications']",
+          "stability": "OK",
+          "pages": 1,
+          "seenOn": "https://playwright-playground.com/network/mocking"
+        }
+      ],
+      "why": {
+        "rule": "unlike-others",
+        "says": "no other page read is enough like it (the closest, /dynamic/clock, shares 80% of its layout and 0% of its headings)"
+      }
+    },
+    {
+      "id": "locators-challenges",
+      "name": "LocatorsChallengesPage",
+      "urlPatterns": [
+        "/locators/*"
+      ],
+      "pages": [
+        "https://playwright-playground.com/locators/challenges"
+      ],
+      "repeated": false,
+      "knownUrls": 1,
+      "titlePattern": "Locator Challenges · QA Playground",
+      "sharedHeadings": [
+        "Locator Challenges",
+        "1. Product cards",
+        "Wireless Mouse",
+        "Mechanical Keyboard",
+        "USB-C Hub",
+        "Wireless Keyboard",
+        "2. Same button, different sections",
+        "Profile settings",
+        "Public profile",
+        "Notification settings",
+        "Email notifications",
+        "3. Exact names",
+        "4. Filter by state",
+        "5. Elements without text"
+      ],
+      "inMenu": true,
+      "linksTo": [],
+      "controls": [
+        {
+          "kind": "button",
+          "words": [
+            "Add to cart"
+          ],
+          "region": "main",
+          "xpath": "//div[@id='root']//article[h3[normalize-space()='Wireless Mouse']]//button[normalize-space()='Add to cart']",
+          "stability": "OK",
+          "pages": 1,
+          "seenOn": "https://playwright-playground.com/locators/challenges"
+        },
+        {
+          "kind": "button",
+          "words": [
+            "Add to cart"
+          ],
+          "region": "main",
+          "xpath": "//div[@id='root']//article[h3[normalize-space()='Mechanical Keyboard']]//button[normalize-space()='Add to cart']",
+          "stability": "OK",
+          "pages": 1,
+          "seenOn": "https://playwright-playground.com/locators/challenges"
+        },
+        {
+          "kind": "button",
+          "words": [
+            "Add to cart"
+          ],
+          "region": "main",
+          "xpath": "//div[@id='root']//article[h3[normalize-space()='USB-C Hub']]//button[normalize-space()='Add to cart']",
+          "stability": "OK",
+          "pages": 1,
+          "seenOn": "https://playwright-playground.com/locators/challenges"
+        },
+        {
+          "kind": "button",
+          "words": [
+            "Add to cart"
+          ],
+          "region": "main",
+          "xpath": "//div[@id='root']//article[h3[normalize-space()='Wireless Keyboard']]//button[normalize-space()='Add to cart']",
+          "stability": "OK",
+          "pages": 1,
+          "seenOn": "https://playwright-playground.com/locators/challenges"
+        },
+        {
+          "kind": "checkbox",
+          "words": [
+            "Public profile"
+          ],
+          "region": "main",
+          "xpath": "//input[ancestor::label[normalize-space()='Public profile']]",
+          "stability": "Strong",
+          "pages": 1,
+          "seenOn": "https://playwright-playground.com/locators/challenges"
+        },
+        {
+          "kind": "button",
+          "words": [
+            "Save"
+          ],
+          "region": "main",
+          "xpath": "//div[@id='root']//section[h3[normalize-space()='Profile settings']]//button[normalize-space()='Save']",
+          "stability": "OK",
+          "pages": 1,
+          "seenOn": "https://playwright-playground.com/locators/challenges"
+        },
+        {
+          "kind": "checkbox",
+          "words": [
+            "Email notifications"
+          ],
+          "region": "main",
+          "xpath": "//input[ancestor::label[normalize-space()='Email notifications']]",
+          "stability": "Strong",
+          "pages": 1,
+          "seenOn": "https://playwright-playground.com/locators/challenges"
+        },
+        {
+          "kind": "button",
+          "words": [
+            "Save"
+          ],
+          "region": "main",
+          "xpath": "//div[@id='root']//section[h3[normalize-space()='Notification settings']]//button[normalize-space()='Save']",
+          "stability": "OK",
+          "pages": 1,
+          "seenOn": "https://playwright-playground.com/locators/challenges"
+        },
+        {
+          "kind": "button",
+          "words": [
+            "Undo delete"
+          ],
+          "region": "main",
+          "xpath": "//button[normalize-space()='Undo delete']",
+          "stability": "OK",
+          "pages": 1,
+          "seenOn": "https://playwright-playground.com/locators/challenges"
+        },
+        {
+          "kind": "button",
+          "words": [
+            "Delete all"
+          ],
+          "region": "main",
+          "xpath": "//button[normalize-space()='Delete all']",
+          "stability": "OK",
+          "pages": 1,
+          "seenOn": "https://playwright-playground.com/locators/challenges"
+        },
+        {
+          "kind": "button",
+          "words": [
+            "Delete"
+          ],
+          "region": "main",
+          "xpath": "//button[normalize-space()='Delete']",
+          "stability": "OK",
+          "pages": 1,
+          "seenOn": "https://playwright-playground.com/locators/challenges"
+        },
+        {
+          "kind": "button",
+          "words": [
+            "Archive"
+          ],
+          "region": "main",
+          "xpath": "//ul[@aria-label='Team tasks']//li[span[normalize-space()='Write test plan']]//button[normalize-space()='Archive']",
+          "stability": "OK",
+          "pages": 1,
+          "seenOn": "https://playwright-playground.com/locators/challenges"
+        },
+        {
+          "kind": "button",
+          "words": [
+            "Archive"
+          ],
+          "region": "main",
+          "xpath": "//ul[@aria-label='Team tasks']//li[span[normalize-space()='Fix flaky login test']]//button[normalize-space()='Archive']",
+          "stability": "OK",
+          "pages": 1,
+          "seenOn": "https://playwright-playground.com/locators/challenges"
+        },
+        {
+          "kind": "button",
+          "words": [
+            "Archive"
+          ],
+          "region": "main",
+          "xpath": "//ul[@aria-label='Team tasks']//li[span[normalize-space()='Review pull request']]//button[normalize-space()='Archive']",
+          "stability": "OK",
+          "pages": 1,
+          "seenOn": "https://playwright-playground.com/locators/challenges"
+        },
+        {
+          "kind": "button",
+          "words": [
+            "Archive"
+          ],
+          "region": "main",
+          "xpath": "//ul[@aria-label='Team tasks']//li[span[normalize-space()='Update CI pipeline']]//button[normalize-space()='Archive']",
+          "stability": "OK",
+          "pages": 1,
+          "seenOn": "https://playwright-playground.com/locators/challenges"
+        },
+        {
+          "kind": "button",
+          "words": [
+            "Archive"
+          ],
+          "region": "main",
+          "xpath": "//ul[@aria-label='Team tasks']//li[span[normalize-space()='Triage bug reports']]//button[normalize-space()='Archive']",
+          "stability": "OK",
+          "pages": 1,
+          "seenOn": "https://playwright-playground.com/locators/challenges"
+        },
+        {
+          "kind": "search field",
+          "words": [
+            "Search the docs"
+          ],
+          "region": "main",
+          "xpath": "//input[@placeholder='Search the docs']",
+          "stability": "Strong",
+          "pages": 1,
+          "seenOn": "https://playwright-playground.com/locators/challenges"
+        },
+        {
+          "kind": "button",
+          "words": [
+            "⚙",
+            "Open settings"
+          ],
+          "region": "main",
+          "xpath": "//button[@title='Open settings']",
+          "stability": "Strong",
+          "pages": 1,
+          "seenOn": "https://playwright-playground.com/locators/challenges"
+        },
+        {
+          "kind": "button",
+          "words": [
+            "?",
+            "Show help"
+          ],
+          "region": "main",
+          "xpath": "//button[@title='Show help']",
+          "stability": "Strong",
+          "pages": 1,
+          "seenOn": "https://playwright-playground.com/locators/challenges"
+        }
+      ],
+      "why": {
+        "rule": "unlike-others",
+        "says": "no other page read is enough like it (the closest, /dialogs/new-tab, shares 47% of its layout and 0% of its headings)"
+      }
+    },
+    {
+      "id": "dialogs-new-tab-content",
+      "name": "DialogsNewTabContentPage",
+      "urlPatterns": [
+        "/dialogs/*"
+      ],
+      "pages": [
+        "https://playwright-playground.com/dialogs/new-tab-content"
+      ],
+      "repeated": false,
+      "knownUrls": 1,
+      "titlePattern": "QA Playground",
+      "sharedHeadings": [
+        "New Tab Content",
+        "New Tab"
+      ],
+      "inMenu": false,
+      "linksTo": [],
+      "why": {
+        "rule": "unlike-others",
+        "says": "no other page read is enough like it (the closest, /dialogs/new-window, shares 67% of its layout and 33% of its headings)"
+      }
+    }
+  ],
+  "skipped": [],
+  "userAgent": "Mozilla/5.0 (compatible; SuiteBuilder/1.0; +https://github.com/Ghost-in-the-Kernel-Labs/Ghost-in-the-Kernel-Labs-suite-builder-docs)",
+  "findings": [
+    {
+      "code": "SITE-08",
+      "severity": "major",
+      "title": "1 form field on 1 page has no label",
+      "where": [
+        {
+          "url": "https://playwright-playground.com/locators/challenges",
+          "says": "1 field: <input type=\"search\">"
+        }
+      ],
+      "why": "A screen reader announces a field with no label as \"edit text\", so a blind visitor cannot tell what to type; a placeholder alone vanishes once typing starts. Accessibility audits fail it.",
+      "fix": "Give each field a <label for=\"its id\"> (each id used once on the page), or an aria-label."
+    },
+    {
+      "code": "SITE-20",
+      "severity": "major",
+      "title": "1 script, style sheet or data request on 1 page failed to load",
+      "where": [
+        {
+          "url": "https://playwright-playground.com/frames/embeds",
+          "says": "1 request: /cdn-cgi/rum (ERR_FAILED)"
+        }
+      ],
+      "why": "A script or style sheet that does not load leaves part of the page unstyled or not working: a menu that does not open, a button that does nothing, a list that never fills. Visitors see it; nothing tells the site's owner.",
+      "fix": "Point each at a file that exists (a path changed in a release is the usual cause), or remove the reference."
+    },
+    {
+      "code": "SITE-21",
+      "severity": "major",
+      "title": "The site's own scripts throw 1 error on 1 page",
+      "where": [
+        {
+          "url": "https://playwright-playground.com/frames/embeds",
+          "says": "1 error: Failed to read the 'serviceWorker' property from 'Navigator': Service worker is disabled because the context is sandboxe"
+        }
+      ],
+      "why": "An error nothing catches stops the script that threw it: whatever it was doing (a form's checks, a cart, tracking) is left undone. Visitors never report it; it is seen only in the browser's console.",
+      "fix": "Open the page with the browser's developer tools, read the console, and fix each error at the line it names."
+    },
+    {
+      "code": "SITE-30",
+      "severity": "major",
+      "title": "1 of the 3 images asked for is broken: visitors see an empty box",
+      "where": [
+        {
+          "url": "https://playwright-playground.com/content/page-audit",
+          "says": "https://playwright-playground.com/images/team-photo.png answered 404"
+        }
+      ],
+      "why": "A broken image is the first thing a visitor notices: a product with no photo, a logo missing, a gap in the page; it reads as a site nobody looks after.",
+      "fix": "Put each image back at its address, or point the page at where it is now (a file renamed or a folder moved in a release is the usual cause)."
+    },
+    {
+      "code": "SITE-13",
+      "severity": "minor",
+      "title": "1 image on 1 page has no alt text",
+      "where": [
+        {
+          "url": "https://playwright-playground.com/content/page-audit",
+          "says": "1 image: <img src=\"/favicon.svg\">"
+        }
+      ],
+      "why": "A screen reader reads the file name instead, or nothing; search engines lose the words that say what the image shows.",
+      "fix": "Add alt=\"what the image shows\"; for an image that is decoration only, alt=\"\"."
+    },
+    {
+      "code": "SITE-17",
+      "severity": "minor",
+      "title": "2 pages share one",
+      "where": [
+        {
+          "url": "https://playwright-playground.com/",
+          "says": "shares \"Free hands-on Playwright exercises with TypeScript: locator…\""
+        },
+        {
+          "url": "https://playwright-playground.com/dialogs/new-tab-content",
+          "says": "shares \"Free hands-on Playwright exercises with TypeScript: locator…\""
+        }
+      ],
+      "why": "Search results show the description under the title; without one, the search engine picks a line of the page, often the menu or a cookie notice.",
+      "fix": "Give each page a <meta name=\"description\"> of a sentence or two saying what it offers."
+    },
+    {
+      "code": "SITE-24",
+      "severity": "minor",
+      "title": "4 security headers no page sends",
+      "where": [
+        {
+          "url": "https://playwright-playground.com/",
+          "says": "none of the 41 pages read sends Strict-Transport-Security (browsers keep to https)"
+        },
+        {
+          "url": "https://playwright-playground.com/",
+          "says": "none of the 41 pages read sends Content-Security-Policy (which scripts may run)"
+        },
+        {
+          "url": "https://playwright-playground.com/",
+          "says": "none of the 41 pages read sends X-Frame-Options or frame-ancestors (another site cannot frame it to trick a click)"
+        },
+        {
+          "url": "https://playwright-playground.com/",
+          "says": "none of the 41 pages read sends X-Content-Type-Options: nosniff"
+        }
+      ],
+      "why": "Each header closes a door attackers use (a downgrade to http, a script slipped in, the site framed in another to trick a click). Security reviews and compliance checklists ask for them, and they cost a line of server configuration.",
+      "fix": "Add the missing headers in the web server or the CDN (one setting each), starting with Strict-Transport-Security."
+    },
+    {
+      "code": "SITE-29",
+      "severity": "minor",
+      "title": "The site has no security.txt: someone who finds a hole has no way to report it",
+      "where": [
+        {
+          "url": "https://playwright-playground.com/.well-known/security.txt",
+          "says": "answered 404"
+        }
+      ],
+      "why": "Researchers who find a security problem look for /.well-known/security.txt to know whom to tell (RFC 9116); without it they may not report it, or report it publicly.",
+      "fix": "Publish /.well-known/security.txt with a Contact line (an email address or a form) and an Expires line."
+    }
+  ],
+  "siteControls": [
+    {
+      "kind": "button",
+      "words": [
+        "▸ Exercise brief"
+      ],
+      "region": "main",
+      "xpath": "//button[normalize-space()='▸ Exercise brief']",
+      "stability": "OK",
+      "pages": 39,
+      "seenOn": "https://playwright-playground.com/basic/hover"
+    },
+    {
+      "kind": "button",
+      "words": [
+        "▸ Solution"
+      ],
+      "region": "main",
+      "xpath": "//button[normalize-space()='▸ Solution']",
+      "stability": "OK",
+      "pages": 39,
+      "seenOn": "https://playwright-playground.com/basic/hover"
+    },
+    {
+      "kind": "button",
+      "words": [
+        "Mark as solved"
+      ],
+      "region": "main",
+      "xpath": "//button[normalize-space()='Mark as solved']",
+      "stability": "OK",
+      "pages": 39,
+      "seenOn": "https://playwright-playground.com/basic/hover"
+    },
+    {
+      "kind": "button",
+      "words": [
+        "▸ Lesson"
+      ],
+      "region": "main",
+      "xpath": "//button[normalize-space()='▸ Lesson']",
+      "stability": "OK",
+      "pages": 27,
+      "seenOn": "https://playwright-playground.com/basic/hover"
+    }
+  ]
+}

@@ -19,6 +19,8 @@ import org.junit.jupiter.api.extension.TestWatcher;
  * Two reasons are the same when they differ only in what they name: an address, a quoted text, a
  * number. A test that passes starts the count again. -DstopAfter=n sets how many (0: never stop).
  * The link report runs first; when it could not reach the site at all, the run stops at once.
+ * Counted per JVM, as a run is one Maven JVM: run in several (forkCount above 1) each counts its own, so
+ * a run stops later than it could, never wrongly; an IDE's run is one JVM, and -Dthreads shares the count.
  */
 public final class StopEarly implements TestWatcher, ExecutionCondition {
     private static final int STOP_AFTER = Integer.parseInt(SiteConfig.value("stopAfter", "5"));

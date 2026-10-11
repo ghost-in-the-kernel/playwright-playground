@@ -6,6 +6,7 @@ import com.playwrightplayground.tests.core.Checks;
 import com.playwrightplayground.tests.core.StepLog;
 
 import java.io.IOException;
+import java.lang.annotation.Annotation;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 import java.nio.charset.StandardCharsets;
@@ -14,8 +15,13 @@ import java.nio.file.Path;
 import java.nio.file.StandardOpenOption;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
 import java.util.Set;
 
+import org.junit.jupiter.api.AfterEach;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.extension.ExtensionContext;
 import org.junit.jupiter.api.extension.InvocationInterceptor;
 import org.junit.jupiter.api.extension.ReflectiveInvocationContext;
@@ -30,7 +36,9 @@ import org.opentest4j.TestAbortedException;
  * page. One that passes the second time passes, and is listed as flaky (in the output and in
  * target/flaky-tests.txt, with where its first try's evidence is), so a page that is often slow is seen.
  * One that fails twice fails, with the second try's reason (the first's attached). Tried once only: the
- * suite's own tests, stories and tests of your own (none of RETRIED's tags).
+ * suite's own tests, stories and tests of your own (none of RETRIED's tags). Your own @AfterEach and
+ * @BeforeEach (in SmokeTest, say) run around the clean browser, as before a new test: BaseTest's are what
+ * the clean browser replaces. Other extensions' callbacks are not run again.
  */
 public final class RerunOnce implements InvocationInterceptor {
     /** This run's flaky tests, one a line; the last run's list goes when this run starts (RunReport). */
@@ -81,7 +89,9 @@ public final class RerunOnce implements InvocationInterceptor {
             System.out.println("   failed on its first try, because: " + StepLog.reason(first) + "\n   trying once more, in a clean browser");
             // G-135: the first try's evidence kept (try-1/), its browser closed, a clean one opened.
             Object target = call.getTarget().orElseThrow();
+            ownLifecycle(target, AfterEach.class, false);
             Path kept = target instanceof BaseTest base ? base.freshTry(first) : null;
+            ownLifecycle(target, BeforeEach.class, true);
             try {
                 Method method = call.getExecutable();
                 method.setAccessible(true);
@@ -95,6 +105,30 @@ public final class RerunOnce implements InvocationInterceptor {
                     + ": passed on its second try (the first: " + StepLog.reason(first) + (kept == null ? "" : "; its evidence: " + kept) + ")";
             System.out.println("   FLAKY: " + line);
             listFlaky(line);
+        }
+    }
+
+    /**
+     * The test class's own @AfterEach or @BeforeEach methods (yours, between it and BaseTest), run as
+     * JUnit runs them around a test; BaseTest's are what freshTry does. One that takes parameters
+     * (TestInfo, say) cannot be called from here: said, and left.
+     */
+    private static void ownLifecycle(Object target, Class<? extends Annotation> which, boolean outermostFirst) throws Throwable {
+        // The classes between the test's and BaseTest: @BeforeEach outermost first, @AfterEach innermost first.
+        List<Class<?>> classes = new ArrayList<>();
+        for (Class<?> c = target.getClass(); c != null && c != BaseTest.class && c != Object.class; c = c.getSuperclass()) classes.add(c);
+        if (outermostFirst) Collections.reverse(classes);
+        for (Method m : classes.stream().flatMap((c) -> java.util.Arrays.stream(c.getDeclaredMethods())).filter((d) -> d.isAnnotationPresent(which)).toList()) {
+            if (m.getParameterCount() > 0) {
+                System.out.println("   note: " + m.getName() + " (@" + which.getSimpleName() + ") takes parameters, so it is not run again for the second try");
+                continue;
+            }
+            m.setAccessible(true);
+            try {
+                m.invoke(target);
+            } catch (InvocationTargetException e) {
+                throw e.getCause();
+            }
         }
     }
 

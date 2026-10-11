@@ -5,6 +5,8 @@ saved-pages/**/*.html
 saved-pages/**/*.htm
 # Accounts: each person's own, never committed (SR-20). secrets/README.md is.
 secrets/*.login
+# What this computer has reported to Jira: each its own (Jira itself is the record, G-216).
+jira-loop/reported.json
 # The pages as the crawl read them: someone else's site, and they can hold personal data too. They stay
 # on this computer for the AI to read, until the crawl is 1 day old (Suite Builder deletes them then).
 crawl/pages/

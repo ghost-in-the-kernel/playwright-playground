@@ -24,6 +24,9 @@ Where a test's account comes from, in this order:
    the crawl signed in with. Deleting Suite Builder deletes it (G-163).
 3. This folder.
 
+`jira.login` is the Jira connection on this computer (Username: the Jira email, Password: its token):
+`jira login` writes it, `jira logout` blanks it, and a pipeline uses its own secrets instead (G-214).
+
 Never commit a filled file (the suite's rules fail the run when .gitignore lets one in, SR-20), and never
 hand one to anyone: give each person an account of their own. To hand the suite on, pack it (`java pack/Pack.java`,
 from the suite's folder, G-160): the zip carries these files blank and says what else it left out. Test accounts on test sites only.

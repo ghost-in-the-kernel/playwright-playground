@@ -52,7 +52,7 @@ stories:
   script:
     - apt-get update -qq
     - apt-get install -y -qq openjdk-17-jdk-headless maven > /dev/null
-    - bash jira/stories.sh
+    - bash jira-loop/stories.sh
     - if [ -z "$(git status --porcelain)" ]; then echo "Nothing to propose."; exit 0; fi
     - git config user.name "Suite stories"
     - git config user.email "suite-stories@users.noreply.github.com"

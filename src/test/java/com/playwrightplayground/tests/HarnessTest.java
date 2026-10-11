@@ -55,6 +55,9 @@ class HarnessTest extends BaseTest {
             <button id="add">Add one</button>
             <button id="hidden" style="display:none">Hidden</button>
             <button id="later">Later</button>
+            <button id="summon">Summon banner</button>
+            <button id="under">Under the banner</button>
+            <p id="under-clicked"></p>
             <button class="twin">Twin</button><button class="twin">Twin</button>
             <p id="count">0</p>
             <p id="spaced">  Hello
@@ -81,6 +84,15 @@ class HarnessTest extends BaseTest {
               };
               document.getElementById('later').onclick = () =>
                 setTimeout(() => { document.getElementById('late').textContent = 'Arrived'; }, 200);
+              // A cookie banner that comes after the page opened, over everything (atos.net's, behind a slow page, 2026-10-06).
+              document.getElementById('summon').onclick = () => {
+                const banner = document.createElement('div');
+                banner.style.cssText = 'position:fixed;inset:0;z-index:1000;background:rgba(0,0,0,0.3)';
+                banner.innerHTML = '<button id="onetrust-accept-btn-handler">Accept all</button>';
+                banner.querySelector('button').onclick = () => banner.remove();
+                document.body.appendChild(banner);
+              };
+              document.getElementById('under').onclick = () => { document.getElementById('under-clicked').textContent = 'Clicked'; };
               document.getElementById('far').onclick = () => { document.getElementById('far-clicked').textContent = 'Clicked'; };
               // A section that fades in once it is scrolled to, as many sites draw theirs (Site G, 2026-10-03).
               new IntersectionObserver((seen) => seen.forEach((e) => { if (e.isIntersecting) e.target.style.opacity = '1'; })).observe(document.getElementById('reveal'));
@@ -106,6 +118,9 @@ class HarnessTest extends BaseTest {
         OFF_BUTTON(page -> page.locator("css=#off")),
         HELP_LINK(page -> page.locator("css=#help")),
         FAR_BUTTON(page -> page.locator("css=#far")),
+        SUMMON_BUTTON(page -> page.locator("css=#summon")),
+        UNDER_BUTTON(page -> page.locator("css=#under")),
+        UNDER_TEXT(page -> page.locator("css=#under-clicked")),
         FAR_TEXT(page -> page.locator("css=#far-clicked")),
         REVEALED_HEADING(page -> page.locator("css=#reveal")),
         CONTACT_HEADING(page -> Headings.named(page, "Contact Us")),
@@ -355,6 +370,14 @@ class HarnessTest extends BaseTest {
     void farDownASmoothPage() {
         UserActions.click(page, Harness.FAR_BUTTON);
         Checks.hasText(page, Harness.FAR_TEXT, "Clicked");
+    }
+
+    @Test
+    @DisplayName("A cookie banner that shows after the page opened, over a button, is accepted, and the click goes through")
+    void lateCookieBannerIsAccepted() {
+        UserActions.click(page, Harness.SUMMON_BUTTON);
+        UserActions.click(page, Harness.UNDER_BUTTON);
+        Checks.hasText(page, Harness.UNDER_TEXT, "Clicked");
     }
 
     @Test

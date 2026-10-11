@@ -6,6 +6,12 @@ A Playwright + JUnit 5 test framework for https://playwright-playground.com, gen
 
 ## Run it
 
+**Lost? Type `crew` in this folder** (or `help`, `suite`, `ask`; in PowerShell `.\crew`, on a Mac or Linux `./crew`): where the suite stands, and a menu of what to do, Claude Code's help among it.
+
+**Rather click than type? `crew`, then "Open the test library"** (or `node menu/library.mjs`): every family and test on one page, on this computer only; click one and watch it run.
+
+**Stories in Jira? Type `jira login` here, once**: then `jira pull` brings the ready stories in and `jira push` sends each card its tests or its questions. `jira-loop/README.md` explains it, for the BA too.
+
 Needs Java 17+ and Maven. From this folder:
 
 ```
@@ -29,7 +35,17 @@ mvn test -DstopAfter=0                 every test, even after 5 in a row fail th
 mvn test -DloadBudget=2.5              fail a test whose page takes over 2.5 s to be ready (every page is
                                        timed anyway: target/timings/timings.csv, the slowest listed at the end)
 mvn test -Dthreads=4                   four test classes at once, each in its own browser (one at a time unless told)
+mvn test -Dgroups=critical             the critical family: what matters most, marked by you
 ```
+
+**API tests.** `core/Api.java` is ready: `Api.site().get("/api/products").expectStatus(200).expectJson("items[0].name", "Lamp")`;
+`.asRole("user")` signs a call in with that role's account, `.bearer(SiteConfig.secret("apiToken"))` with a token
+from `-D` or the environment; each call is a step in the test's log. No browser, and no dependency to add.
+
+**Test families.** `-Dgroups` runs a family: smoke, critical, navigation, links, stories, and any of your
+own. A test of yours joins one by its annotation, on the method or the class: `@Family.Smoke`,
+`@Family.Critical` (a misspelt one does not compile). A family of your own: add it in `Family.java`'s
+YOURS block, as the others there are written, then `mvn test -Dgroups=<its name>`.
 
 Every setting for every run (the site, the browser, ads, a pause, the waits) is in
 `src/test/resources/suite.properties`; a run's first line says which were given, and where from. Every

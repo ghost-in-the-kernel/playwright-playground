@@ -90,6 +90,26 @@ public final class CookieBanner {
         return (SITE_BUTTON.isEmpty() ? known : page.locator(SITE_BUTTON + " >> visible=true").or(known)).first().isVisible();
     }
 
+    /**
+     * A banner that showed after accept() stopped waiting for it (atos.net's, behind a slow page) covers
+     * what a test clicks: clicked away when it shows now, with no wait. True when it was, and took the click.
+     */
+    public static boolean acceptLate(Page page) {
+        Locator known = page.locator(KNOWN_BUTTONS + " >> visible=true");
+        Locator button = (SITE_BUTTON.isEmpty() ? known : page.locator(SITE_BUTTON + " >> visible=true").or(known)).first();
+        try {
+            if (!button.isVisible()) return false;
+            button.click(new Locator.ClickOptions().setTimeout(4_000));
+        } catch (PlaywrightException e) {
+            return false;
+        }
+        synchronized (ACCEPTED) {
+            ACCEPTED.add(browserOf(page));
+        }
+        System.out.println("   cookie banner showed late; accepted");
+        return true;
+    }
+
     /** The browser a test's banner choice belongs to: its context. */
     private static Object browserOf(Page page) {
         return page.context();

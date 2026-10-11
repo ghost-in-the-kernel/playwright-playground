@@ -9,10 +9,8 @@ staff, contractors and anyone else do so, for any purpose, including commercial 
 license is perpetual, worldwide, royalty-free and irrevocable, and it does not depend on any
 license for Suite Builder, the tool that generated the suite.
 
-This license is granted only if the suite was generated under a valid Suite Builder license: a
-commercial license, or the owner's own use for a personal project. A suite generated any other way
-is not licensed to anyone; its rights are reserved by ghost-in-the-kernel, and the owner of
-playwright-playground.com can obtain this license by taking a commercial license that covers it. See
+Using this suite needs no license, only ownership of playwright-playground.com. Generating a suite needs a
+Suite Builder license, and generating one without a license does not take it from the owner. See
 https://github.com/Ghost-in-the-Kernel-Labs/Ghost-in-the-Kernel-Labs-suite-builder-docs/blob/main/GENERATED-OUTPUT.md
 
 THE SUITE IS PROVIDED AS IS, WITHOUT WARRANTY OF ANY KIND. AS FAR AS THE LAW ALLOWS, ITS AUTHORS

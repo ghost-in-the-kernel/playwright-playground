@@ -3,7 +3,7 @@
 # and hourly on weekdays: the stories in Jira's ready status become tests or come back pushed back, the
 # cards are moved, and what changed is proposed as a pull request. Nothing to do: it stops in a minute.
 # Secrets: JIRA_API_TOKEN, JIRA_EMAIL, ANTHROPIC_API_KEY (JIRA_EMAIL on Jira Cloud only). Not set up yet
-# (jira/jira.properties blank): it does nothing.
+# (jira-loop/jira.properties blank): it does nothing.
 # A pipeline of its own (Pipelines > New > existing YAML: azure-stories.yml). Its build service needs Contribute
 # and Create branch on the repository, and Contribute to pull requests.
 trigger: none
@@ -29,7 +29,7 @@ steps:
   - task: NodeTool@0
     inputs:
       versionSpec: '20.x'
-  - script: bash jira/stories.sh
+  - script: bash jira-loop/stories.sh
     env:
       JIRA_API_TOKEN: $(JIRA_API_TOKEN)
       JIRA_EMAIL: $(JIRA_EMAIL)

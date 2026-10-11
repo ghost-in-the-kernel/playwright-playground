@@ -46,6 +46,12 @@ public final class UserActions {
      * Playwright's own error says only how long it waited.
      */
     public static void clickOn(Locator locator, String label) {
+        clickOn(locator, label, true);
+    }
+
+    /** The click; a cookie banner that showed late is clicked away first, and again once if it still covers the element. */
+    private static void clickOn(Locator locator, String label, boolean bannerMayCover) {
+        if (bannerMayCover) CookieBanner.acceptLate(locator.page());
         try {
             locator.click(new Locator.ClickOptions().setTimeout(WaitActions.elementTimeout()));
         } catch (TimeoutError e) {
@@ -54,6 +60,10 @@ public final class UserActions {
                 shown = locator.first().isVisible();
             } catch (RuntimeException gone) {
                 shown = false;
+            }
+            if (shown && bannerMayCover && CookieBanner.acceptLate(locator.page())) {
+                clickOn(locator, label, false);
+                return;
             }
             String s = WaitActions.seconds(WaitActions.elementTimeout());
             throw new AssertionError(shown

@@ -61,10 +61,10 @@ not change the test to make it pass. Report it, and note it here.
 
 **Likely fix:** Add the missing headers in the web server or the CDN (one setting each), starting with Strict-Transport-Security.
 
-- /: none of the 41 pages read sends Strict-Transport-Security (browsers keep to https)
-- /: none of the 41 pages read sends Content-Security-Policy (which scripts may run)
-- /: none of the 41 pages read sends X-Frame-Options or frame-ancestors (another site cannot frame it to trick a click)
-- /: none of the 41 pages read sends X-Content-Type-Options: nosniff
+- /: no page of the site sends Strict-Transport-Security (browsers keep to https)
+- /: no page of the site sends Content-Security-Policy (which scripts may run)
+- /: no page of the site sends X-Frame-Options or frame-ancestors (another site cannot frame it to trick a click)
+- /: no page of the site sends X-Content-Type-Options: nosniff
 
 ### MINOR SITE-29: The site has no security.txt: someone who finds a hole has no way to report it
 

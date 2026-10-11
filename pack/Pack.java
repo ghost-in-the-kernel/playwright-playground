@@ -21,6 +21,11 @@ import java.util.zip.ZipOutputStream;
  * nothing to download). Beside the suite, &lt;folder&gt;-pack-&lt;date&gt;.zip, with every account file blank
  * (secrets/*.login), the pages as crawled while the crawl is current (1 days, G-124), and
  * none of what a run leaves or a receiver brings back. It says what it left out, and why.
+ *
+ * <p>{@code java pack/Pack.java --run}: this run's pack, to send to whoever helps with its failures
+ * (G-213). &lt;folder&gt;-run-&lt;date&gt;.zip: the suite as above, and the run's failures (each one's
+ * screenshot, what it saw, why it failed) and reports, without the pages as crawled and without the
+ * step-by-step replays; {@code --trace <test name>} adds the replay of each failure whose folder names it.
  */
 public final class Pack {
     /** What is left out, by path prefix, and why (the same in every framework Suite Builder writes). */
@@ -42,10 +47,22 @@ public final class Pack {
     static final String BLANK_ACCOUNT = "Username:\nPassword:\n";
     /** The longest path in the zip that still unzips on Windows (260 characters, less room for where it is unzipped). */
     static final int LONGEST_PATH = 160;
+    /** What a run's pack adds: the run's evidence and reports, by path prefix. */
+    static final List<String> RUN_TAKES = List.of("target/failures/", "target/report.html", "target/flaky-tests.txt", "target/link-report.md", "target/rules-report.md", "cypress/failures/", "cypress/screenshots/", "cypress/report.html", "cypress/flaky-tests.txt", "cypress/link-report.md", "cypress/rules-report.md");
+    /** The file a failure's step-by-step replay is saved as (null: this framework keeps none). */
+    static final String REPLAY = "/trace.zip";
+    static final String WHY_NO_REPLAY = "a step-by-step replay, about 13 MB each: --trace <test name> adds the one you need";
 
     public static void main(String[] args) throws IOException {
         Path suite = Path.of("").toAbsolutePath();
-        Path zip = suite.resolveSibling(suite.getFileName() + "-pack-" + LocalDate.now() + ".zip");
+        boolean run = List.of(args).contains("--run");
+        int t = List.of(args).indexOf("--trace");
+        String trace = t >= 0 && t + 1 < args.length ? args[t + 1].toLowerCase() : null;
+        if (run && !Files.isDirectory(suite.resolve("target/failures")) && !Files.exists(suite.resolve("target/report.html"))) {
+            System.out.println("No run here to pack: run the tests first (mvn test), then pack it.");
+            System.exit(1);
+        }
+        Path zip = suite.resolveSibling(suite.getFileName() + (run ? "-run-" : "-pack-") + LocalDate.now() + ".zip");
         Map<String, Integer> left = new TreeMap<>();
         Map<String, String> why = new TreeMap<>();
         boolean pagesCurrent = crawlIsCurrent(suite);
@@ -55,7 +72,9 @@ public final class Pack {
         try (ZipOutputStream out = new ZipOutputStream(Files.newOutputStream(zip)); Stream<Path> walk = Files.walk(suite)) {
             for (Path file : walk.filter(Files::isRegularFile).sorted().toList()) {
                 String rel = suite.relativize(file).toString().replace('\\', '/');
-                String reason = leftOut(rel, pagesCurrent);
+                String reason = run ? runLeftOut(rel, trace) : null;
+                if (reason == null && !(run && runTakes(rel))) reason = leftOut(rel, pagesCurrent);
+                if (run && reason == null && rel.startsWith("crawl/pages/")) reason = "the pages as crawled: the crawl file holds what they showed, and they can hold personal data";
                 if (reason != null) {
                     String group = group(rel);
                     left.merge(group, 1, Integer::sum);
@@ -76,11 +95,12 @@ public final class Pack {
                 packed++;
             }
         }
-        System.out.println("Packed " + packed + " files into " + zip + " (" + blanked + " account file" + (blanked == 1 ? "" : "s") + " blank).");
+        System.out.println("Packed " + packed + " files into " + zip + ", " + String.format("%.1f", Files.size(zip) / 1048576.0) + " MB (" + blanked + " account file" + (blanked == 1 ? "" : "s") + " blank).");
         if (!left.isEmpty()) System.out.println("Left out:");
         left.forEach((group, count) -> System.out.println("  " + group + " (" + count + " file" + (count == 1 ? "" : "s") + "): " + why.get(group)));
         if (longest.length() > LONGEST_PATH) System.out.println("Too long for Windows' zip once unzipped (" + longest.length() + " characters; at most " + LONGEST_PATH + "): " + longest + ". Shorten that name before handing it on.");
-        System.out.println("Hand it on as it is; never a copy with a filled account file. The receiver fills in secrets/ (secrets/README.md).");
+        if (run) System.out.println("The screenshots and page.html files show the site as the run saw it: signed in, they can show an account's data. Look before you send it.");
+        else System.out.println("Hand it on as it is; never a copy with a filled account file. The receiver fills in secrets/ (secrets/README.md).");
     }
 
     /** Why a file stays out of the zip; null when it goes in. */
@@ -91,8 +111,21 @@ public final class Pack {
         return null;
     }
 
+    /** In a run's pack: a run's evidence and reports go in, the plain pack's rules aside. */
+    static boolean runTakes(String rel) {
+        for (String take : RUN_TAKES) if (rel.equals(take) || (take.endsWith("/") && rel.startsWith(take))) return true;
+        return false;
+    }
+
+    /** Why a run's pack leaves a file out that the run's evidence holds: a trace not asked for by name. */
+    static String runLeftOut(String rel, String trace) {
+        if (REPLAY == null || !rel.endsWith(REPLAY)) return null;
+        return trace != null && rel.toLowerCase().contains(trace) ? null : WHY_NO_REPLAY;
+    }
+
     /** What a left-out file is said as: its folder, or itself. */
     static String group(String rel) {
+        if (REPLAY != null && rel.endsWith(REPLAY)) return "the step-by-step replays";
         for (String[] out : LEAVES_OUT) if (rel.startsWith(out[0])) return out[0];
         if (rel.startsWith("saved-pages/")) return "saved-pages/ (the pages; its README goes in)";
         if (rel.startsWith("crawl/pages/")) return "crawl/pages/";

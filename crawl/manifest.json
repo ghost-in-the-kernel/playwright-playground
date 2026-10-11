@@ -2,12 +2,12 @@
   "tool": "suite-builder",
   "version": "1.39.0",
   "build": {
-    "commit": "7bac34306bd467b867cd11ba88e25ebd92d482b7",
+    "commit": "7f0a502e6f0d64749dcb494c36c850ece9bb8a5e",
     "branch": "main"
   },
   "framework": "playwright",
-  "generatedAt": "2026-10-11T11:05:13.490Z",
-  "command": "suite-builder build https://playwright-playground.com/",
+  "generatedAt": "2026-10-11T11:29:09.309Z",
+  "command": "suite-builder build playwright-playground-com-tests",
   "templates": "crawl/playwright-playground.com.templates.json",
   "crawl": "crawl/playwright-playground.com.crawl.json",
   "crawlFileSaved": "2026-10-11T11:05:13.311Z",

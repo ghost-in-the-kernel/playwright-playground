@@ -15,8 +15,9 @@ on:
   push:
     branches: [main]
   # ==== YOURS (schedule): safe to edit; regenerating keeps what is between these lines ====
-  schedule:
-    - cron: '7 * * * 1-5'
+  # Hourly schedule removed 2026-10-19 to save CI; run by hand or via Jira dispatch.
+  # schedule:
+  #   - cron: '7 * * * 1-5'
   # ==== END YOURS (schedule) ====
 concurrency:
   group: stories-${{ github.event_name }}

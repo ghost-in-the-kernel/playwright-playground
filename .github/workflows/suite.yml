@@ -8,8 +8,6 @@ on:
   push:
   pull_request:
   workflow_dispatch:
-  schedule:
-    - cron: '23 3 * * *'
 env:
   # ==== YOURS (env): safe to edit; regenerating keeps what is between these lines ====
   # Another copy of the site: a repository variable BASE_URL (Settings > Variables); unset, the crawled site.
